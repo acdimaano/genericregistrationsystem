@@ -25,7 +25,7 @@
 </head>
 
 <body>
-    <!-- Defining the page layout for admin -->
+    <!-- Defining the page layout -->
     <div class="page-layout">
     <div class="header page-title background-header">
             <div class="background-image" style="background-image:url(images/admin_header.jpg)";></div>
