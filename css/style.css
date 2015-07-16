@@ -1,0 +1,569 @@
+
+body {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  -webkit-font-smoothing: antialiased;
+  line-height: 20px;
+  color: #222222;
+  font-weight: 400;
+  background-color: #ccc;
+}
+.uppercase-text {
+  text-transform: uppercase;
+}
+.strong-text,
+.strong-text h1,
+.strong-text h3 {
+  font-weight: bold;
+  color: #ffffff;
+}
+.letter-spacing {
+  letter-spacing: 1px;
+}
+a {
+  color: #ff4081;
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #ff0d5f;
+  outline: none;
+  text-decoration: none;
+}
+h1,
+h3,
+h4
+{
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top: 0;
+  font-weight: 400;
+  color: #000000;
+}
+h1 {
+  font-size: 45px;
+  line-height: 48px;
+  margin-bottom: 11px;
+  letter-spacing: -1px;
+  font-weight: 400;
+}
+h3 {
+  font-size: 24px;
+  line-height: 32px;
+  padding-top: 16px;
+  margin-bottom: 12px;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+h4 {
+  font-size: 20px;
+  line-height: 28px;
+  padding-top: 19px;
+  margin-bottom: 13px;
+  letter-spacing: 0;
+  font-weight: 500;
+}
+p {
+  font-size: 13px;
+}
+/*custom css*/ .admin-option{
+  font-size: 13px;
+  margin: 10px;
+}
+
+/*custom css*/p.welcome-text {
+  font-size: 28px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+/*for customizing class name*/p .btn {
+  margin-right: 20px;
+}
+/*custom css for ul: last*/ ul:last-child,
+ol:last-child,
+ul li:last-child {
+  margin-bottom: 0;
+}
+/*for customizing class name*/.btn-punch {
+  border: 2px solid;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-radius: 2px;
+  text-shadow: 0 1px rgba(0,0,0,0.1);
+  min-width: 120px;
+}
+.btn-punch:hover,
+.btn-punch:focus {
+  box-shadow: 0 6px 10px rgba(0,0,0,0.23);
+  outline: none;
+}
+/*for customizing class name*/.btn-punch.btn-white {
+  border-color: #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+}
+.btn-punch.btn-white:hover,
+.btn-punch.btn-white:focus {
+  background-color: #ffffff;
+  color: #212121;
+}
+/*for customizing class name*/.btn-punch.btn-white.hover-colors {
+  background-color: #ffffff;
+  color: #212121;
+}
+.btn-punch.btn-white.hover-colors:hover,
+.btn-punch.btn-white.hover-colors:focus {
+  background-color: #ffffff;
+}
+/*for customizing class name*/.btn-punch.btn-black {
+  border-color: #212121;
+  color: #212121;
+  background-color: transparent;
+}
+.btn-punch.btn-black:hover,
+.btn-punch.btn-black:focus {
+  background-color: #212121;
+  color: #ffffff;
+}
+/*for customizing class name*/.btn-punch.btn-primary {
+  border-color: #ff4081;
+  color: #ff4081;
+  background-color: transparent;
+}
+.btn-punch.btn-primary:hover,
+.btn-punch.btn-primary:focus {
+  background-color: #ff4081;
+  color: #ffffff;
+}
+/*for customizing class name*/.btn-punch.btn-primary.btn-darker {
+  background-color: #ff4081;
+  color: #ffffff;
+}
+.btn-punch.btn-primary.btn-darker:hover,
+.btn-punch.btn-primary.btn-darker:focus {
+  background-color: #ff0d5f;
+  border-color: #ff0d5f;
+  color: #ffffff;
+}
+/*for customizing class name*/.btn-punch.btn-xs {
+  padding: 8px 12px;
+  font-size: 11px;
+}
+/*for customizing class name*/.btn-punch.btn-sm {
+  padding: 10px 15px;
+  font-size: 12px;
+}
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="email"],
+/*for customizing class name*/.form-control {
+  display: block;
+  width: 90%;
+  padding: 8px 0px;
+  line-height: 1.8em;
+  height: auto;
+  background-image: none;
+  border: none;
+  border-bottom: 1px solid rgba(33,33,33,0.3);
+  border-radius: 0;
+  box-shadow: none;
+  margin-bottom: 20px;
+}
+select:hover,
+select:focus,
+textarea:hover,
+textarea:focus,
+input[type="text"]:hover,
+input[type="text"]:focus,
+input[type="password"]:hover,
+input[type="password"]:focus,
+input[type="date"]:hover,
+input[type="date"]:focus,
+input[type="email"]:hover,
+input[type="email"]:focus,
+/*for customizing class name*/.form-control:hover,
+.form-control:focus {
+  border-color: rgba(33,33,33,0.5);
+  outline: none;
+  box-shadow: none;
+  box-shadow: '' none 1px 2px rgba(0,0,0,0.1);
+}
+/*custom name and dropdown icon*/select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAjklEQVQ4T+3SMQrCYAyG4ad6Aa/h4gVcBK9Q9JoODr2Ek4sIYic3ERHESeWHFkpt+w/dpBnzJS/JlyR6RtKz3x8Cpjjj1eHNDHt8Qk3dgzHW2ODZAJnjikOpNZk4KiBbPCqQBS44VsFtVwj5FTLcsUSOU32qrjMGLcUbuwLws1XsD4I+wa3N1Bgg+qgDgC+KjhQRlo1IvAAAAABJRU5ErkJggg==) !important;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+.has-error .help-block{
+  color: #f44336;
+}
+/*for customizing class name*/.has-success .form-control {
+  box-shadow: none;
+  border-color: #4caf50;
+}
+.has-success .form-control:hover,
+.has-success .form-control:focus {
+  box-shadow: none;
+  border-color: #3d8b40;
+}
+/*for customizing class name*/.has-error .form-control {
+  box-shadow: none;
+  border-color: #f44336;
+}
+.has-error .form-control:hover,
+.has-error .form-control:focus {
+  box-shadow: none;
+  border-color: #ea1c0d;
+}
+
+/*customize name - welcomepage*/.middle-content {
+  position: relative;
+  margin-top: 0;
+  z-index: 3;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/*custom css*/.space {
+  height: 30px;
+  background-color: transparent;
+  display: block;
+}
+/*custom css for content section - directory and doctor list*/
+.section.record-details {
+  background-color: #eeedee;
+}
+/*custom*/.section.record-details .content .row .col-lg-3 .details {
+  padding: 30px;
+}
+/*custom css*/.section.record-details .content .row .col-lg-3 .details .details-header {
+  padding-top: 0;
+  padding-bottom: 15px;
+}
+/*custom css*/.section.record-details .content .row .col-lg-3 .details .details-header h3.details-name {
+  font-size: 18px;
+}
+/*custom css*/.details {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  margin-bottom: 30px;
+}
+/*custom css*/.details .details-header h3.details-name {
+  margin: 0;
+  padding: 0;
+  font-size: 23px;
+  line-height: 1.1;
+  font-weight: 300;
+  margin-bottom: 10px;
+  margin-right: 10%;
+}
+/*custom css*/.details .details-header .details-header-desc {
+  overflow: hidden;
+  height: 13px;
+  line-height: 13px;
+  text-transform: none;
+  font-weight: 300;
+  font-size: 13px;
+  color: #AAA;
+}
+/*custom css*/.details .details-header-desc {
+  list-style: none;
+  font-weight: 300;
+  font-size: 13px;
+}
+/*custom css*/.details .details-link {
+  line-height: 30px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(238,237,238,0.65);
+}
+.section, .paper {
+  padding-top: 85px;
+  padding-bottom: 85px;
+  position: relative;
+  background-color: #FFF;
+  overflow: hidden;
+}
+/*custom css for header title*/
+.header {
+  padding-top: 95px;
+  padding-bottom: 95px;
+  position: relative;
+  background-color: #FFF;
+  overflow: hidden;
+}
+
+/*custom css for header title section*/
+.header .background-header{
+  overflow: hidden;
+}
+.header.background-header .background-image{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-size: cover !important;
+}
+/*custom css for index and welcome page*/
+.section.background-wrapper .background-image {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-size: cover !important;
+}
+/*custom css - check for code > effect is in hr line for welcome page*/
+.section .container,
+.paper .container {
+  position: relative;
+  z-index: 5;
+}
+/*custom css for header overlay*/
+.header.with-overlay.white-overlay,
+.header.with-overlay.white-overlay h1{
+  color: #212121;
+}
+
+/*custom css for header title*/
+.header.with-overlay.white-overlay:after {
+  background-color: rgba(255,255,255,0.9);
+}
+/*custom css*/.section .pink-background,
+.section.pink-background h4,
+.paper.pink-background,
+.paper.pink-background h4{
+  background-color: #ff4081;
+  color: #ffffff;
+}
+
+/*custom css*/.section .yellow-background,
+.section .yellow-background h4,
+.paper.yellow-background,
+.paper.yellow-background h4 {
+  background-color: #f5dd0e;
+  color: #ffffff;
+}
+/*custom css*/.section .blue-background,
+.section.blue-background h4,
+.paper.blue-background,
+.paper.blue-background h4{
+  background-color: #2196f3;
+  color: #ffffff;
+}
+/*custom css*/.section .green-background,
+.section.green-background h4,
+.paper.green-background,
+.paper.green-background h4 {
+  background-color: #4caf50;
+  color: #ffffff;
+}
+/*customize name*/.section.black-background {
+  background-color: #212121;
+  color: #ffffff;
+}
+/*css for text in header*/
+.section.page-title h1,
+.paper.page-title h1 {
+  margin-bottom: 15px;
+  letter-spacing: 0.5em;
+  font-size: 30px;
+  line-height: 1.8;
+  text-transform: uppercase;
+}
+/*css for text in header*/
+.section.page-title p,
+.paper.page-title p {
+  margin-top: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+/*custom css for text in header*/
+.header.page-title h1{
+  margin-bottom: 15px;
+  letter-spacing: 0.5em;
+  font-size: 30px;
+  line-height: 1.8;
+  text-transform: uppercase;
+}
+/*custom css for text in header*/
+.header.page-title p{
+  margin-top: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+.header.page-title .option-menu{
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 12px;
+  position: absolute;
+  top: -30px;
+  right: 10px;
+  letter-spacing: 1px;
+}
+.header.page-title .option-menu > .active{
+  color: inherit;
+}
+/*custom css*/
+.page-layout {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFF;
+}
+.container-fluid {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+/*custom css*/#header {
+  height: 90px;
+  line-height: 90px;
+  padding: 0 !important;
+  overflow: inherit;
+}
+/*custom css hr in index menu*/ #header .header-line {
+  display: none;
+  bottom: 0px;
+  left: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+  padding: 0 15px;
+}
+/*custom css hr index menu*/ #header .header-line .line {
+  border-bottom: 2px solid #fff;
+  width: 100%;
+  height: 0px;
+  display: block;
+  z-index: 0;
+}
+/*custom css*/#header.transparent {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  box-shadow: none;
+}
+/*custom css horizontal line in index header*/ #header.transparent .header-line {
+  display: block;
+}
+/*custom css hr index menu*/#header.transparent.white-header .header-line .line {
+  border-bottom-color: rgba(255,255,255,0.05);
+}
+/*custom css*/#header.transparent.white-header .menu ul li a,
+#header.transparent.white-header .menu ul li a:hover,
+#header.transparent.white-header .menu ul li a:focus,
+#header.transparent.white-header .menu-toggle {
+  color: #ffffff;
+}
+.section.bigger-padding{
+  padding-top: 190px;
+  padding-bottom: 190px;
+}
+.section.grey-background{
+  background-color: #eeedee;
+  color: #212121;}
+
+#header.transparent.white-header .menu ul li a:hover,
+#header.transparent.white-header .menu ul li a:focus {
+  border-bottom-color: #ffffff;
+}
+
+#header.transparent.black-header .menu ul li a:hover,
+#header.transparent.black-header .menu ul li a:focus {
+  border-bottom-color: #212121;
+}
+#header.sticky {
+  line-height: 60px;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: #FFF !important;
+ }
+/*custom css*/#header.sticky .menu ul li a,
+#header.sticky .menu-toggle {
+  color: #222222 !important;
+  line-height: 60px;
+  border: none !important;
+}
+#header.sticky .menu ul li a:hover,
+#header.sticky .menu ul li a:focus,
+#header.sticky .menu-toggle:hover,
+#header.sticky .menu-toggle:focus {
+  color: #ff4081 !important;
+}
+/*custom css index header*/ #header .menu ul li {
+  margin: 0 8px;
+}
+#header .menu ul li a {
+  position: relative;
+  color: #222222;
+  font-weight: normal;
+  font-size: 15px;
+  top: 0;
+  line-height: 86px;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  display: block;
+  z-index: 10;
+}
+#header .menu ul li a:hover,
+#header .menu ul li a:focus {
+  color: #ff4081;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid #ff4081;
+}
+/*custom css*/#header .menu-toggle {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  line-height: 90px;
+  font-size: 22px;
+  display: none;
+}
+#header .menu-toggle:hover {
+  color: #ff4081;
+}
+/*custom css for selected link in the menu*/
+.breadcrumb li.selected a{color: #212121;}
+
+/*css for table in doctor's view */
+.patient-table{
+	width: 100%;
+	border-collapse: collapse;
+	}
+.patient-table th, td {
+	padding: 7px;
+	border: #212121 1px solid;}
+.patient-table th {
+	background-color: #212121;
+	color: #ffffff}
+.patient-table tr:nth-child(odd) {
+	background: #ffffff}
+.patient-table tr:ntn-child(even) {
+	background: #eeedee;}
+
+/*search section in admin directory page*/	
+.search{
+	width: 27%;
+	float: right;
+	margin-right: -15px;}
+
