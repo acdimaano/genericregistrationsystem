@@ -31,7 +31,7 @@
             <div class="background-image" style="background-image: url(images/admin_header.jpg)"></div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="column-whole">
                         <h1>Welcome Back Patient</h1>
                         <p class="">Please provide your NHI so we can pull up your record</p>
                         <ol class="option-menu">
@@ -61,24 +61,27 @@
                         </script><section class="section big-padding active-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="column-whole">
                         <form data-toggle="validator" id="template-contactform" name="template-contactform" action="patient_selectspecialty.php" method="post" role="form" novalidate="true">
 
                             <div class="form-process"></div>
 
-                            <div class="col-md-4 form-group">
+                            <div class="column-one-third form-group">
                                 <label for="template-contactform-name">NHI <small>*</small></label>
                                 <input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="form-control" required="">
                                 <div class="help-block with-errors"></div>
                             </div>
 
-                            <div class="col-md-12">                                
+                            <div class="column-whole">                                
                                 <p id="contact-form-result"></p>
                                 <br>
                             </div><!--/.col-->
 
-                            <div class="col-md-12">
-                                <button class="btn btn-punch btn-xs btn-black disabled" type="submit" id="submit-nhi" name="template-contactform-submit" value="submit" style="pointer-events: all; cursor: pointer;">Submit your NHI</button>
+                            <div class="column-one-sixth">
+                                <button class="btn btn-save-cancel btn-small disabled" type="submit" id="submit-patient-nhi" value="submit" style="pointer-events: all; cursor: pointer;">Submit NHI</button>
+                            </div>
+							<div class="column-one-sixth">
+                                <button class="btn btn-save-cancel btn-small disabled" type="submit" id="cancel-patient" value="submit" style="pointer-events: all; cursor: pointer;">Cancel</button>
                             </div>
 
                         </form><!--/.form-->
@@ -86,15 +89,15 @@
                     </div><!-- /.col -->
                 </div><!-- /.row -->
             </div><!-- /.container -->
-        </section><!-- /.section --><section class="section black-background active-section">
+        </section><!-- /.section --><section class="section footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="column-one-half">
                         <p>Medical City<br/>
 						#820 Symond St. Auckland CBD<br/>
 						0800 634 8892</p>
                     </div><!-- /.col -->
-                    <div class="col-md-6 text-right">
+                    <div class="column-one-half text-right">
                         <p><br/>© 2015 - GRS Application by Alan & Rhiza</p>
                     </div><!-- /.col -->
                 </div><!-- /.row -->

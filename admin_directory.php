@@ -31,7 +31,7 @@
             <div class="background-image" style="background-image:url(images/admin_header.jpg)"></div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="column-whole">
                         <h1>People Directory</h1>
                         <p class="">Contains the list of all users and doctor records</p>
                         <ol class="option-menu">
@@ -53,10 +53,10 @@
 					<input type="text" id="search-user" name="search-user">
 				</div>
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="column-whole">
                         <div class="content">
                             <div class="row">
-                                <div class="col-md-4 col-lg-3">
+                                <div class="column-one-third space-one-fourth">
                                     <div class="details">
                                         <div class="details-header">
                                             <h3 class="details-name">Rhiza Roque</h3>
@@ -78,7 +78,7 @@
                                     </div><!--/.entry-->
                                 </div><!--/.col-->
 
-                                <div class="col-md-4 col-lg-3">
+                                <div class="column-one-third space-one-fourth">
                                     <div class="details">
                                         <div class="details-header">
                                             <h3 class="details-name">Neville Longbottom</h3>
@@ -100,7 +100,7 @@
                                     </div><!--/.entry-->
                                 </div><!--/.col-->
 								
-								<div class="col-md-4 col-lg-3">
+								<div class="column-one-third space-one-fourth">
                                     <div class="details">
                                         <div class="details-header">
                                             <h3 class="details-name">Callie Torres</h3>
@@ -122,7 +122,7 @@
                                     </div><!--/.entry-->
                                 </div><!--/.col-->
 								
-								<div class="col-md-4 col-lg-3">
+								<div class="column-one-third space-one-fourth">
                                     <div class="details">
                                         <div class="details-header">
                                             <h3 class="details-name">Carla Joy Castel</h3>
@@ -144,7 +144,7 @@
                                     </div><!--/.entry-->
                                 </div><!--/.col-->
 								
-								<div class="col-md-4 col-lg-3">
+								<div class="column-one-third space-one-fourth">
                                     <div class="details">
                                         <div class="details-header">
                                             <h3 class="details-name">Alan Dimaano</h3>
@@ -166,7 +166,7 @@
                                     </div><!--/.entry-->
                                 </div><!--/.col-->
 								
-								<div class="col-md-4 col-lg-3">
+								<div class="column-one-third space-one-fourth">
                                     <div class="details">
                                         <div class="details-header">
                                             <h3 class="details-name">Arizona Robins</h3>
@@ -188,7 +188,7 @@
                                     </div><!--/.entry-->
                                 </div><!--/.col-->
 								
-								<div class="col-md-4 col-lg-3">
+								<div class="column-one-third space-one-fourth">
                                     <div class="details">
                                         <div class="details-header">
                                             <h3 class="details-name">Ludo Bagman</h3>
@@ -210,7 +210,7 @@
                                     </div><!--/.entry-->
                                 </div><!--/.col-->
 								
-								<div class="col-md-4 col-lg-3">
+								<div class="column-one-third space-one-fourth">
                                     <div class="details">
                                         <div class="details-header">
                                             <h3 class="details-name">Rhiza Roque</h3>
@@ -232,7 +232,7 @@
                                     </div><!--/.entry-->
                                 </div><!--/.col-->
 								
-								<div class="col-md-4 col-lg-3">
+								<div class="column-one-third space-one-fourth">
                                     <div class="details">
                                         <div class="details-header">
                                             <h3 class="details-name">Molly Weasley</h3>
@@ -254,7 +254,7 @@
                                     </div><!--/.entry-->
                                 </div><!--/.col-->
 								
-								<div class="col-md-4 col-lg-3">
+								<div class="column-one-third space-one-fourth">
                                     <div class="details">
                                         <div class="details-header">
                                             <h3 class="details-name">Rhiza Roque</h3>
@@ -292,10 +292,10 @@
                     </div><!--/.col-->
                 </div><!--/.row-->
             </div><!--/.container-->
-        </div><!--/.section--><section class="section black-background active-section">
+        </div><!--/.section--><section class="section footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="column-one-half">
                         <ul class="list-inline">
                             <li><a href="#" title="" class="strong-text">About</a></li>
                             <li><a href="#" title="" class="strong-text">Overview</a></li>
@@ -304,7 +304,7 @@
                             <li><a href="#" title="" class="strong-text">Contact Us</a></li>
                         </ul>
                     </div><!-- /.col -->
-                    <div class="col-md-6 text-right">
+                    <div class="column-one-half text-right">
                         <p>© 2015 - GRS Application by Alan & Rhiza</p>
                     </div><!-- /.col -->
                 </div><!-- /.row -->

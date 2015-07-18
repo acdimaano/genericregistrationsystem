@@ -27,30 +27,30 @@
 <body>
     <!-- Defining the page layout -->
     <div class="page-layout">    
-		<section class="section grey-background active-section">
+		<section class="section grey-background">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-md-offset-3 text-center">
-                        <i class="text-danger icon larger ti-direction-alt"></i>
+                    <div class="column-one-half offset-one-fourth text-center">
+                        <i class="large-icon ti-direction-alt"></i>
                         <h1 class="lighter">Patient Queue Number: B012</h1>
                         <p class="lead large-lead">
                             Dr Yeng, Cristina <br />
 							Cardiologist <br />
 							Rm. 502
                         </p>
-                        <p><a href="patient_welcome.php" title="" class="btn btn-punch btn-lg btn-danger btn-darker">Got it!!</a></p>
+                        <p><a href="patient_welcome.php" title="" class="btn btn-red">Got it!!</a></p>
                     </div><!-- /.col -->
                 </div><!-- /.row -->
             </div><!-- /.container -->
-        </section><!-- /.section --><section class="section black-background active-section">
+        </section><!-- /.section --><section class="section footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="column-one-half">
                         <p>Medical City<br/>
 						#820 Symond St. Auckland CBD<br/>
 						0800 634 8892</p>
                     </div><!-- /.col -->
-                    <div class="col-md-6 text-right">
+                    <div class="column-one-half text-right">
                         <p><br/>© 2015 - GRS Application by Alan & Rhiza</p>
                     </div><!-- /.col -->
                 </div><!-- /.row -->

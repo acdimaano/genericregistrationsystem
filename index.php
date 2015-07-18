@@ -36,14 +36,14 @@
 		<header id="header" class="section transparent white-header header active-section">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3">
+				<div class="column-one-fourth">
 					<div class="logo">
 						<a href="" title="">
 							<img src="">
 						</a>
 					</div>
 				</div><!-- /.col-->
-				<div class="col-md-9 menu-col text-right">
+				<div class="column-three-fourth menu-col text-right">
 					<div class="menu">
 						<ul class="list-inline">
 							<li><a href="patient_welcome.php">Patient</a></li>
@@ -69,11 +69,11 @@
             <div class="background-image parallax-background" data-stellar-background-ratio="0.5" style="background-image: url(images/index_screen.jpg)"></div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="column-one-half">
                         <div class="element">
                             <p class="welcome-text">A friendly application for doctors and patients. Patient can view and set an appointment
 									with their doctors. Doctors can access their patient records.</p>
-                            <p><a class="btn btn-punch btn-white hover-primary hover-colors btn-sm login-window" role="button">Purchase Now</a> <a class="btn btn-punch btn-primary btn-sm btn-darker login-window"  role="button">Login</a>
+                            <p><a class="btn btn-pink login-window"  role="button">Login</a>
                             </p>
                         </div>
                     </div>
@@ -83,12 +83,12 @@
         <!-- /.section --><section class="section active-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 col-md-offset-2 text-center">
+                    <div class="column-two-third offset-one-sixth text-center">
                         <h1 class="lighter">Perfect for your project</h1>
                         <p class="lead">You have the design, you have the code </p>
                         <div class="space hidden-sm hidden-xs"></div>
                     </div><!-- /.col -->
-                    <div class="col-md-4">
+                    <div class="column-one-third">
                         <div class="service-block">
                             <i class="icon ti-time text-primary"></i>
                             <h4 class="lighter">Save Your Time</h4>
@@ -96,7 +96,7 @@
                             <div class="space hidden-sm hidden-xs"></div>
                         </div>
                     </div><!-- /.col -->
-                    <div class="col-md-4">
+                    <div class="column-one-third">
                         <div class="service-block">
                             <i class="icon ti-mobile text-primary"></i>
                             <h4 class="lighter">Fully Responsive</h4>
@@ -104,7 +104,7 @@
                             <div class="space hidden-sm hidden-xs"></div>
                         </div>
                     </div><!-- /.col -->
-                    <div class="col-md-4">
+                    <div class="column-one-third">
                         <div class="service-block">
                             <i class="icon ti-layout text-primary"></i>
                             <h4 class="lighter">Page Builder</h4>
@@ -112,21 +112,21 @@
                             <div class="space hidden-sm hidden-xs"></div>
                         </div>
                     </div><!-- /.col -->
-                    <div class="col-md-4">
+                    <div class="column-one-third">
                         <div class="service-block">
                             <i class="icon ti-face-smile text-primary"></i>
                             <h4 class="lighter">Easy to Use</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor magna aliqua.</p>
                         </div>
                     </div><!-- /.col -->
-                    <div class="col-md-4">
+                    <div class="column-one-third">
                         <div class="service-block">
                             <i class="icon ti-notepad text-primary"></i>
                             <h4 class="lighter">Material Design</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor magna aliqua.</p>
                         </div>
                     </div><!-- /.col -->
-                    <div class="col-md-4">
+                    <div class="column-one-third">
                         <div class="service-block">
                             <i class="icon ti-book text-primary"></i>
                             <h4 class="lighter">Documentation</h4>
@@ -138,24 +138,24 @@
         </section><!-- /.section --><section class="section big-padding grey-background active-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-5">
+                    <div class="column-one-half">
                         <h2 class="lighter">Introducing <strong>Material</strong></h2>
                         <p class="lead">Sed ut perspiciatis unde omnis iste eillo inventore.</p>
                         <h5>What is <strong>Google Material Design</strong></h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</p>
                         <p><a href="#" title="" class="btn btn-punch btn-link btn-black">Learn More</a> <a href="#" title="" class="btn btn-punch btn-link btn-black">Watch Video</a></p>
                     </div><!-- /.col -->
-                    <div class="col-md-6 col-md-offset-1">
+                    <div class="column-one-half">
                         <div class="embed-responsive embed-responsive-16by9">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/Q8TXgCzxEnw" frameborder="0" allowfullscreen=""></iframe>
                         </div>
                     </div><!-- /.col -->
                 </div><!-- /.row -->
             </div><!-- /.container -->
-        </section><!-- /.section --><section class="section black-background active-section">
+        </section><!-- /.section --><section class="section footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="column-one-half">
                         <ul class="list-inline">
                             <li><a href="#" title="" class="strong-text">About</a></li>
                             <li><a href="#" title="" class="strong-text">Overview</a></li>
@@ -164,7 +164,7 @@
                             <li><a href="#" title="" class="strong-text">Contact Us</a></li>
                         </ul>
                     </div><!-- /.col -->
-                    <div class="col-md-6 text-right">
+                    <div class="column-one-half text-right">
                         <p>© 2015 - GRS Application by Alan & Rhiza</p>
                     </div><!-- /.col -->
                 </div><!-- /.row -->
@@ -174,17 +174,8 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/jquery.flexslider-min.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/stellar.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.localscroll.min.js"></script>
-    <script src="js/jquery.scrollto.min.js"></script>
-    <script src="js/validator.min.js"></script>
     <script src="js/jquery.form.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
     <script src="js/scripts.js"></script>
-
 	<div id="grs-overlay-login" class="grs-hidden"></div>
 
 </body></html>

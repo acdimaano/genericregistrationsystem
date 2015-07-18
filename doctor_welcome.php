@@ -30,12 +30,12 @@
 	<header id="header" class="section transparent white-header header active-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="column-one-fourth">
                         <div class="logo">
                                 <img src="">
                         </div>
                     </div><!-- /.col-->
-                    <div class="col-md-9 menu-col text-right">
+                    <div class="column-three-fourth menu-col text-right">
                         <div class="menu">
                             <ul class="list-inline">
                                 <li><a href="index.php">Logout</a></li>
@@ -48,32 +48,31 @@
                 </div><!--/.row-->
             </div><!-- /.container -->    
         </header><!-- /header -->
-        <!-- PARALLAX SECTION -->
-        <section class="fullscreen section background-wrapper black-background active-section" style="height: 267px;">
+        <section class="fullscreen section background-wrapper" style="height: 267px;">
             <div class="background-image" style="background-image: url(images/welcome_screen.jpg)"></div>
             <div class="container middle-content">
                 <div class="row">
-                    <div class="col-md-6 col-md-offset-3 text-center">
+                    <div class="column-one-half offset-one-fourth text-center">
                         <div class="element">
                             <h1 class="strong-text">Welcome to Medical City!</h1>
 							<h3 class="strong-text">Access your patient details in just a click.
                             <div class="space"></div>
-                            <p><a href="doctor_patientqueue.php" class="btn btn-punch btn-white hover-primary hover-colors btn-sm" role="button">Patient Queue</a> <a href="doctor_patientdone.php" class="btn btn-punch btn-primary btn-sm btn-darker" role="button">Patient Done</a>
+                            <p><a href="doctor_patientqueue.php" class="btn btn-white" role="button">Patient Queue</a> <a href="doctor_patientdone.php" class="btn btn-pink" role="button">Patient Done</a>
                             </p>
                         </h1></div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- /.section --><section class="section black-background active-section">
+        <!-- /.section --><section class="section footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="column-one-half">
                         <p>Medical City<br/>
 						#820 Symond St. Auckland CBD<br/>
 						0800 634 8892</p>
                     </div><!-- /.col -->
-                    <div class="col-md-6 text-right">
+                    <div class="column-one-half text-right">
                         <p><br/>© 2015 - GRS Application by Alan & Rhiza</p>
                     </div><!-- /.col -->
                 </div><!-- /.row -->

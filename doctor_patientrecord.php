@@ -31,7 +31,7 @@
             <div class="background-image" style="background-image: url(images/admin_header.jpg)"></div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="column-whole">
                         <h1>Patient Details</h1>
                         <p>Provide findings and prescription for your patient</p>
                         <ol class="option-menu">
@@ -61,72 +61,72 @@
                         </script><section class="section big-padding active-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="column-whole">
                         <form data-toggle="validator" id="template-contactform" name="template-contactform" action="doctor_welcome.php" method="post" role="form" novalidate="true">
 
                             <div class="form-process"></div>
 
-                            <div class="col-md-4 form-group">
+                            <div class="column-one-third form-group">
                                 <label>First Name <small>*</small></label>
                                 <input type="text" id="fname" class="form-control" required="">
                                 <div class="help-block with-errors"></div>
                             </div>
 
-                            <div class="col-md-4 form-group">
+                            <div class="column-one-third form-group">
                                 <label>Last Name <small>*</small></label>
                                 <input type="text" id="lname" value="" class="form-control" required="">
                                 <div class="help-block with-errors"></div>
                             </div>
 
-                            <div class="col-md-4 form-group">
+                            <div class="column-one-third form-group">
                                 <label>Middle Name</label>
                                 <input type="text" id="mi" value="" class="form-control">
                                 <div class="help-block with-errors"></div>
                             </div>
 
-                            <div class="col-md-8 form-group">
+                            <div class="column-two-third form-group">
                                 <label>Home Address</label>
                                 <input type="text" id="address" class="form-control">
                                 <div class="help-block with-errors"></div>
                             </div>
 							
-							<div class="col-md-4 form-group">
+							<div class="column-one-third form-group">
                                 <label>Gender</label>
                                 <input type="text" id="gender" class="form-control">
                                 <div class="help-block with-errors"></div>
                             </div>
 							
-							 <div class="col-md-4 form-group">
+							 <div class="column-one-third form-group">
                                 <label>Date of Birth</label>
                                 <input type="date" id="bdate" class="form-control">
                                 <div class="help-block with-errors"></div>
                             </div>
 
-                            <div class="col-md-4 form-group">
+                            <div class="column-one-third form-group">
                                 <label>Phone No.</label>
                                 <input type="text" id="phone" class="form-control">
                                 <div class="help-block with-errors"></div>
                             </div>
 
-                            <div class="col-md-4 form-group">
+                            <div class="column-one-third form-group">
                                 <label>NHI </label><small>*</small>
                                 <input type="text" id="nhi" class="form-control" required="">
                                 <div class="help-block with-errors"></div>
                             </div>
 
-                            <div class="col-md-12 form-group">
+                            <div class="column-whole form-group">
                                 <label>Diagnosis <small>*</small></label>
                                 <textarea class="form-control" id="diagnosis" rows="4" cols="30" required=""></textarea>
                                 <div class="help-block with-errors"></div>
                             </div>
 							
-							<div class="col-md-12 form-group">
+							<div class="column-whole form-group">
                                 <label>Prescription <small>*</small></label>
                                 <textarea class="form-control" id="diagnosis" rows="4" cols="30" required=""></textarea>
                                 <div class="help-block with-errors"></div>
                             </div>
 							
-							<div class="col-md-12 form-group">
+							<div class="column-whole form-group">
 								<h4>Medication History</h4>
 								<table class="patient-table">
 									<col width="250">
@@ -142,16 +142,16 @@
 								</table>	
 							</div><!--/.col-->
 							
-                            <div class="col-md-12">                                
+                            <div class="column-whole">                                
                                 <p id="contact-form-result"></p>
                                 <br>
                             </div><!--/.col-->
 
-                            <div class="col-md-2">
-                                <button class="btn btn-punch btn-xs btn-black disabled" type="submit" id="submit-patient-record" value="submit" style="pointer-events: all; cursor: pointer;">Submit Changes</button>
+                            <div class="column-one-sixth">
+                                <button class="btn btn-save-cancel btn-small" type="submit" id="submit-patient-record" value="submit" style="pointer-events: all; cursor: pointer;">Submit Changes</button>
                             </div>
-							<div class="col-md-2">
-                                <button class="btn btn-punch btn-xs btn-black disabled" type="submit" id="cancel-patient-record" value="cancel" style="pointer-events: all; cursor: pointer;">Cancel Changes</button>
+							<div class="column-one-sixth">
+                                <button class="btn btn-save-cancel btn-small" type="submit" id="cancel-patient-record" value="cancel" style="pointer-events: all; cursor: pointer;">Cancel Changes</button>
                             </div>
 							
 							<!--action for cancelling the changes made-->
@@ -164,15 +164,15 @@
                     </div><!-- /.col -->
                 </div><!-- /.row -->
             </div><!-- /.container -->
-        </section><!-- /.section --><section class="section black-background active-section">
+        </section><!-- /.section --><section class="section footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="column-one-half">
                         <p>Medical City<br/>
 						#820 Symond St. Auckland CBD<br/>
 						0800 634 8892</p>
                     </div><!-- /.col -->
-                    <div class="col-md-6 text-right">
+                    <div class="column-one-half text-right">
                         <p><br/>© 2015 - GRS Application by Alan & Rhiza</p>
                     </div><!-- /.col -->
                 </div><!-- /.row -->

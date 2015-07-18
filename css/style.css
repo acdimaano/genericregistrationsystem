@@ -31,10 +31,7 @@ a:focus {
   outline: none;
   text-decoration: none;
 }
-h1,
-h3,
-h4
-{
+h1, h3, h4{
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: 0;
   font-weight: 400;
@@ -66,26 +63,27 @@ h4 {
 p {
   font-size: 13px;
 }
-/*custom css*/ .admin-option{
+.admin-option{
   font-size: 13px;
   margin: 10px;
 }
 
-/*custom css*/p.welcome-text {
+p.welcome-text {
   font-size: 28px;
   line-height: 1.6;
   margin-bottom: 40px;
   font-weight: 300;
+  color: #fff;
 }
-/*for customizing class name*/p .btn {
+p .btn {
   margin-right: 20px;
 }
-/*custom css for ul: last*/ ul:last-child,
+ul:last-child,
 ol:last-child,
 ul li:last-child {
   margin-bottom: 0;
 }
-/*for customizing class name*/.btn-punch {
+.btn-save-cancel {
   border: 2px solid;
   text-transform: uppercase;
   font-weight: bold;
@@ -93,75 +91,81 @@ ul li:last-child {
   border-radius: 2px;
   text-shadow: 0 1px rgba(0,0,0,0.1);
   min-width: 120px;
-}
-.btn-punch:hover,
-.btn-punch:focus {
-  box-shadow: 0 6px 10px rgba(0,0,0,0.23);
-  outline: none;
-}
-/*for customizing class name*/.btn-punch.btn-white {
-  border-color: #ffffff;
-  color: #ffffff;
-  background-color: transparent;
-}
-.btn-punch.btn-white:hover,
-.btn-punch.btn-white:focus {
-  background-color: #ffffff;
-  color: #212121;
-}
-/*for customizing class name*/.btn-punch.btn-white.hover-colors {
-  background-color: #ffffff;
-  color: #212121;
-}
-.btn-punch.btn-white.hover-colors:hover,
-.btn-punch.btn-white.hover-colors:focus {
-  background-color: #ffffff;
-}
-/*for customizing class name*/.btn-punch.btn-black {
+  padding: 8px 12px;
+  font-size: 11px;
   border-color: #212121;
   color: #212121;
   background-color: transparent;
 }
-.btn-punch.btn-black:hover,
-.btn-punch.btn-black:focus {
+/*button shadow effect and background changes on hover*/
+.btn-save-cancel:hover {
+  box-shadow: 0 6px 10px rgba(0,0,0,0.23);
+  outline: none;
   background-color: #212121;
   color: #ffffff;
 }
-/*for customizing class name*/.btn-punch.btn-primary {
+/*white button for patient and doctor's welcome page*/
+.btn-white {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #212121;
+  padding: 10px 15px;
+  font-size: 12px;
+}
+.btn-white:hover {
+  background-color: #f5f5f5;
+  color: #212121;
+}
+/*login, existing patient and done patient buttons*/
+.btn-pink {
+  border: 2px solid;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-radius: 2px;
+  text-shadow: 0 1px rgba(0,0,0,0.1);
+  min-width: 120px;
+  padding: 10px 15px;
+  font-size: 12px;
   border-color: #ff4081;
-  color: #ff4081;
-  background-color: transparent;
-}
-.btn-punch.btn-primary:hover,
-.btn-punch.btn-primary:focus {
   background-color: #ff4081;
   color: #ffffff;
 }
-/*for customizing class name*/.btn-punch.btn-primary.btn-darker {
-  background-color: #ff4081;
-  color: #ffffff;
-}
-.btn-punch.btn-primary.btn-darker:hover,
-.btn-punch.btn-primary.btn-darker:focus {
+.btn-pink:hover {
   background-color: #ff0d5f;
   border-color: #ff0d5f;
   color: #ffffff;
 }
-/*for customizing class name*/.btn-punch.btn-xs {
-  padding: 8px 12px;
-  font-size: 11px;
+/*got it button for patient page*/
+.btn-red{
+  padding: 10px 35px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
 }
-/*for customizing class name*/.btn-punch.btn-sm {
-  padding: 10px 15px;
-  font-size: 12px;
+.btn-red:hover{
+  background-color: #c62f2b;
+  border-color: #c62f2b;
+  color: #fff
 }
+ .large-icon{
+  color: #c62f2b;
+  font-size: 70px
+}
+
 select,
 textarea,
 input[type="text"],
 input[type="password"],
 input[type="date"],
 input[type="email"],
-/*for customizing class name*/.form-control {
+.form-control {
   display: block;
   width: 90%;
   padding: 8px 0px;
@@ -186,14 +190,14 @@ input[type="date"]:hover,
 input[type="date"]:focus,
 input[type="email"]:hover,
 input[type="email"]:focus,
-/*for customizing class name*/.form-control:hover,
+.form-control:hover,
 .form-control:focus {
   border-color: rgba(33,33,33,0.5);
   outline: none;
   box-shadow: none;
   box-shadow: '' none 1px 2px rgba(0,0,0,0.1);
 }
-/*custom name and dropdown icon*/select {
+/*dropdown icon*/select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -205,7 +209,7 @@ input[type="email"]:focus,
 .has-error .help-block{
   color: #f44336;
 }
-/*for customizing class name*/.has-success .form-control {
+.has-success .form-control {
   box-shadow: none;
   border-color: #4caf50;
 }
@@ -214,7 +218,7 @@ input[type="email"]:focus,
   box-shadow: none;
   border-color: #3d8b40;
 }
-/*for customizing class name*/.has-error .form-control {
+.has-error .form-control {
   box-shadow: none;
   border-color: #f44336;
 }
@@ -224,7 +228,7 @@ input[type="email"]:focus,
   border-color: #ea1c0d;
 }
 
-/*customize name - welcomepage*/.middle-content {
+/*welcomepage*/.middle-content {
   position: relative;
   margin-top: 0;
   z-index: 3;
@@ -233,7 +237,7 @@ input[type="email"]:focus,
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/*custom css*/.space {
+.space {
   height: 30px;
   background-color: transparent;
   display: block;
@@ -242,17 +246,17 @@ input[type="email"]:focus,
 .section.record-details {
   background-color: #eeedee;
 }
-/*custom*/.section.record-details .content .row .col-lg-3 .details {
+.section.record-details .content .row .space-one-fourth .details {
   padding: 30px;
 }
-/*custom css*/.section.record-details .content .row .col-lg-3 .details .details-header {
+.section.record-details .content .row .space-one-fourth .details .details-header {
   padding-top: 0;
   padding-bottom: 15px;
 }
-/*custom css*/.section.record-details .content .row .col-lg-3 .details .details-header h3.details-name {
+.section.record-details .content .row .space-one-fourth .details .details-header h3.details-name {
   font-size: 18px;
 }
-/*custom css*/.details {
+.details {
   background-color: #ffffff;
   padding: 40px;
   border-radius: 2px;
@@ -260,7 +264,7 @@ input[type="email"]:focus,
   -webkit-border-radius: 2px;
   margin-bottom: 30px;
 }
-/*custom css*/.details .details-header h3.details-name {
+.details .details-header h3.details-name {
   margin: 0;
   padding: 0;
   font-size: 23px;
@@ -269,21 +273,21 @@ input[type="email"]:focus,
   margin-bottom: 10px;
   margin-right: 10%;
 }
-/*custom css*/.details .details-header .details-header-desc {
+.details .details-header .details-header-desc {
   overflow: hidden;
   height: 13px;
   line-height: 13px;
   text-transform: none;
   font-weight: 300;
   font-size: 13px;
-  color: #AAA;
+  color: #aaa
 }
-/*custom css*/.details .details-header-desc {
+.details .details-header-desc {
   list-style: none;
   font-weight: 300;
   font-size: 13px;
 }
-/*custom css*/.details .details-link {
+.details .details-link {
   line-height: 30px;
   padding-top: 15px;
   border-top: 1px solid rgba(238,237,238,0.65);
@@ -303,7 +307,6 @@ input[type="email"]:focus,
   background-color: #FFF;
   overflow: hidden;
 }
-
 /*custom css for header title section*/
 .header .background-header{
   overflow: hidden;
@@ -325,56 +328,52 @@ input[type="email"]:focus,
   height: 100%;
   background-size: cover !important;
 }
-/*custom css - check for code > effect is in hr line for welcome page*/
 .section .container,
 .paper .container {
   position: relative;
   z-index: 5;
 }
-/*custom css for header overlay*/
+/*custom css for header overlay
 .header.with-overlay.white-overlay,
 .header.with-overlay.white-overlay h1{
   color: #212121;
 }
-
-/*custom css for header title*/
+/*custom css for header title
 .header.with-overlay.white-overlay:after {
   background-color: rgba(255,255,255,0.9);
-}
-/*custom css*/.section .pink-background,
+}*/
+.section .pink-background,
 .section.pink-background h4,
 .paper.pink-background,
 .paper.pink-background h4{
   background-color: #ff4081;
   color: #ffffff;
 }
-
-/*custom css*/.section .yellow-background,
+.section .yellow-background,
 .section .yellow-background h4,
 .paper.yellow-background,
 .paper.yellow-background h4 {
   background-color: #f5dd0e;
   color: #ffffff;
 }
-/*custom css*/.section .blue-background,
+.section .blue-background,
 .section.blue-background h4,
 .paper.blue-background,
 .paper.blue-background h4{
   background-color: #2196f3;
   color: #ffffff;
 }
-/*custom css*/.section .green-background,
+.section .green-background,
 .section.green-background h4,
 .paper.green-background,
 .paper.green-background h4 {
   background-color: #4caf50;
   color: #ffffff;
 }
-/*customize name*/.section.black-background {
+.section.footer {
   background-color: #212121;
   color: #ffffff;
 }
-/*css for text in header*/
 .section.page-title h1,
 .paper.page-title h1 {
   margin-bottom: 15px;
@@ -383,7 +382,6 @@ input[type="email"]:focus,
   line-height: 1.8;
   text-transform: uppercase;
 }
-/*css for text in header*/
 .section.page-title p,
 .paper.page-title p {
   margin-top: 0;
@@ -392,7 +390,6 @@ input[type="email"]:focus,
   font-weight: 300;
   margin-bottom: 5px;
 }
-/*custom css for text in header*/
 .header.page-title h1{
   margin-bottom: 15px;
   letter-spacing: 0.5em;
@@ -400,7 +397,6 @@ input[type="email"]:focus,
   line-height: 1.8;
   text-transform: uppercase;
 }
-/*custom css for text in header*/
 .header.page-title p{
   margin-top: 0;
   text-transform: uppercase;
@@ -420,7 +416,6 @@ input[type="email"]:focus,
 .header.page-title .option-menu > .active{
   color: inherit;
 }
-/*custom css*/
 .page-layout {
   max-width: 1920px;
   margin-left: auto;
@@ -431,7 +426,7 @@ input[type="email"]:focus,
   padding-left: 5%;
   padding-right: 5%;
 }
-/*custom css*/#header {
+#header {
   height: 90px;
   line-height: 90px;
   padding: 0 !important;
@@ -446,27 +441,27 @@ input[type="email"]:focus,
   width: 100%;
   padding: 0 15px;
 }
-/*custom css hr index menu*/ #header .header-line .line {
+#header .header-line .line {
   border-bottom: 2px solid #fff;
   width: 100%;
   height: 0px;
   display: block;
   z-index: 0;
 }
-/*custom css*/#header.transparent {
+#header.transparent {
   position: absolute;
   top: 0;
   width: 100%;
   background-color: transparent;
   box-shadow: none;
 }
-/*custom css horizontal line in index header*/ #header.transparent .header-line {
+#header.transparent .header-line {
   display: block;
 }
-/*custom css hr index menu*/#header.transparent.white-header .header-line .line {
+#header.transparent.white-header .header-line .line {
   border-bottom-color: rgba(255,255,255,0.05);
 }
-/*custom css*/#header.transparent.white-header .menu ul li a,
+#header.transparent.white-header .menu ul li a,
 #header.transparent.white-header .menu ul li a:hover,
 #header.transparent.white-header .menu ul li a:focus,
 #header.transparent.white-header .menu-toggle {
@@ -498,7 +493,7 @@ input[type="email"]:focus,
   z-index: 9999;
   background-color: #FFF !important;
  }
-/*custom css*/#header.sticky .menu ul li a,
+#header.sticky .menu ul li a,
 #header.sticky .menu-toggle {
   color: #222222 !important;
   line-height: 60px;
@@ -510,7 +505,7 @@ input[type="email"]:focus,
 #header.sticky .menu-toggle:focus {
   color: #ff4081 !important;
 }
-/*custom css index header*/ #header .menu ul li {
+#header .menu ul li {
   margin: 0 8px;
 }
 #header .menu ul li a {
@@ -531,7 +526,7 @@ input[type="email"]:focus,
   border-top: 2px solid transparent;
   border-bottom: 2px solid #ff4081;
 }
-/*custom css*/#header .menu-toggle {
+#header .menu-toggle {
   position: absolute;
   top: 0;
   right: 15px;
@@ -543,7 +538,7 @@ input[type="email"]:focus,
   color: #ff4081;
 }
 /*custom css for selected link in the menu*/
-.breadcrumb li.selected a{color: #212121;}
+.option-menu li.selected a{color: #212121;}
 
 /*css for table in doctor's view */
 .patient-table{

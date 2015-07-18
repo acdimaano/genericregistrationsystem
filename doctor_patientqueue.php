@@ -31,7 +31,7 @@
             <div class="background-image" style="background-image: url(images/admin_header.jpg)"></div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="column-whole">
                         <h1>Patient in Queue</h1>
                         <p>List of patient in queue for consultation today</p>
                         <ol class="option-menu">
@@ -41,7 +41,7 @@
                 </div><!--/.row-->
             </div><!--/.container-->
         </div><!-- /.section -->
-		<div class="section blog-section active-section">
+		<div class="section">
             <div class="container">
                 <table class="patient-table">
 					<col width="150">
@@ -87,15 +87,15 @@
 					
 				</table><!--/.patient-->
             </div><!--/.container-->
-        </div><!--/.section--><section class="section black-background active-section">
+        </div><!--/.section--><section class="section footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="column-one-half">
                         <p>Medical City<br/>
 						#820 Symond St. Auckland CBD<br/>
 						0800 634 8892</p>
                     </div><!-- /.col -->
-                    <div class="col-md-6 text-right">
+                    <div class="column-one-half text-right">
                         <p><br/>© 2015 - GRS Application by Alan & Rhiza</p>
                     </div><!-- /.col -->
                 </div><!-- /.row -->
