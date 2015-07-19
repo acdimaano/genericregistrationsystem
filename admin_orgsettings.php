@@ -74,19 +74,19 @@
 
                             <div class="column-two-third form-group">
                                 <label for="template-contactform-name">Organization Name <small>*</small></label>
-                                <input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="form-control" required="">
+                                <input type="text" id="orgname" name="orgname" value="" class="form-control" required="">
                                 <div class="help-block with-errors"></div>
                             </div>
 
                             <div class="column-one-third form-group">
                                 <label for="template-contactform-phone">Contact Number <small>*</small></label>
-                                <input type="text" id="template-contactform-phone" name="template-contactform-phone" value="" class="form-control" required="">
+                                <input type="text" id="phone" name="phone" value="" class="form-control" required="">
                                 <div class="help-block with-errors"></div>
                             </div>
 
                             <div class="column-two-third form-group">
                                 <label for="template-contactform-subject">Address <small>*</small></label>
-                                <input type="text" id="template-contactform-subject" name="template-contactform-subject" value="" class="form-control" required="">
+                                <input type="text" id="address" name="address" value="" class="form-control" required="">
                                 <div class="help-block with-errors"></div>
                             </div>
 
