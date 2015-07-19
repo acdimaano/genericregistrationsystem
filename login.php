@@ -72,9 +72,14 @@
                 <div class="row">
                             <div class="form-process"></div>
 
-                            <div class="col-md-4 form-group">
-                                <label>First Name <small>*</small></label>
-                                <input type="text" id="fname" name="fname" value="" class="form-control" required="">
+                            <div class="column-one-third form-group">
+                                <label><font color="white" size="5">Email<small>*</small></font></label>
+                                <input type="text" id="user_id" name="user_id" value="" class="form-control" required="">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="column-one-third form-group">
+                                <label><font color="white" size="5">Password<small>*</small></font></label>
+                                <input type="text" id="user_password" name="user_password" value="" class="form-control" required="">
                                 <div class="help-block with-errors"></div>
                             </div>
                 </div>
