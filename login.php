@@ -51,7 +51,7 @@
 							<li><a href="doctor_welcome.php">Doctor</a></li>
 							<!--this will be removed, work around only-->
 							<li><a href="admin_welcomepage.php">Admin</a></li>
-							<li><a href="login.php">Login</a></li>
+							<li><a href="#login-box" class="login-window">Login</a></li>
 						</ul>
 					</div>
 				</div><!-- /.col-->
@@ -70,14 +70,13 @@
             <div class="background-image parallax-background" data-stellar-background-ratio="0.5" style="background-image: url(images/index_screen.jpg)"></div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-                        <div class="element">
-                            <p class="welcome-text">A friendly application for doctors and patients. Patient can view and set an appointment
-									with their doctors. Doctors can access their patient records.</p>
-                            <p><a class="btn btn-punch btn-white hover-primary hover-colors btn-sm login-window" role="button">Purchase Now</a> <a class="btn btn-punch btn-primary btn-sm btn-darker login-window"  role="button">Login</a>
-                            </p>
-                        </div>
-                    </div>
+                            <div class="form-process"></div>
+
+                            <div class="col-md-4 form-group">
+                                <label>First Name <small>*</small></label>
+                                <input type="text" id="fname" name="fname" value="" class="form-control" required="">
+                                <div class="help-block with-errors"></div>
+                            </div>
                 </div>
             </div>
         </section>

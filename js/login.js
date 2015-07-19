@@ -7,13 +7,13 @@ $(document).ready(function() {
 					+		"<div class='grs-login-header'>Login</div>"
 					+		"<div class='grs-login-content'>"
 					+			"<div class='grs-user-login'>Email</div>"
-					+			"<input type='text' class='grs-user-text grs-input-login' size='35'></input>"
+					+			"<input type='text' class='grs-user-text grs-input-login' size='35' name='login_email' id='login_email'></input>"
 					+			"<div class='grs-pass-login'>Password</div>"
-					+			"<input type='password' class='grs-pass-text grs-input-login' size='35'></input>"
+					+			"<input type='password' class='grs-pass-text grs-input-login' size='35' name='login_password' id='login_password'></input>"
 					+		"</div>"
 					+		"<div class='grs-login-footer'>"
 					+			"<div class='grs-close-btn grs-login-buttons'>Close</div>"
-					+			"<div class='grs-login-btn grs-login-buttons'>Login</div>"
+					+			"<div class='grs-login-btn grs-login-buttons' id='login_page'>Login</div>"
 					+ 		"</div>"
 					+	"</div>";
 			$('body').append(markup);
