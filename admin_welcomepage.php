@@ -31,7 +31,7 @@
             <div class="background-image" style="background-image:url(images/admin_header.jpg)";></div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="column-whole">
                         <h1>GRS Application</h1>
                         <p>Howdy Admin!!! Configure your organization's details here. </p>
                         <ol class="option-menu">
@@ -48,29 +48,29 @@
         </div><!-- /.section --><section class="section big-padding active-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
-                        <div class="paper shadow-1 pink-background text-center">
+                    <div class="column-one-fourth">
+                        <div class="paper pink-background text-center">
                             <a href="admin_user.php"><img src="images/user.gif" alt="Add/Update User"></a>
                             <a href="admin_user.php"><h4>Add/Update Users</h4></a>
                             <p class="admin-option">Add, update or remove any user account to limit the access in our system</p>
                         </div><!-- /.paper -->
                     </div><!-- /.col -->
-                    <div class="col-md-3">
-                        <div class="paper shadow-1 yellow-background text-center">
+                    <div class="column-one-fourth">
+                        <div class="paper yellow-background text-center">
                             <a href="admin_record.php"><img src="images/doctor.gif" alt="Add/Update Doctor"></a>
                             <a href="admin_record.php"><h4>Add/Update Doctors</h4></a>
                             <p class="admin-option">You can add or update records so our patients can view all of our doctor's details</p>
                         </div><!--/.paper -->
                     </div><!-- /.col -->
-                    <div class="col-md-3">
-                        <div class="paper shadow-1 blue-background text-center">
+                    <div class="column-one-fourth">
+                        <div class="paper blue-background text-center">
                             <a href="admin_directory.php"><img src="images/directory.gif" alt="People Directory"></a>
                             <a href="admin_directory.php"><h4>People Directory</h4></a>
                             <p class="admin-option">Contains the list of all user account and doctors that are currently available</p>
                         </div><!--/.paper -->
                     </div><!-- /.col -->
-                    <div class="col-md-3">
-                        <div class="paper shadow-1 green-background text-center">
+                    <div class="column-one-fourth">
+                        <div class="paper green-background text-center">
                             <a href="admin_orgsettings.php"><img src="images/settings.gif" alt="Organization Settings" ></a>
                             <a href="admin_orgsettings.php"><h4>Org Settings</h4></a>
                             <p class="admin-option">Define the organization name and upload logo that represents our brand</p>
@@ -78,10 +78,10 @@
                     </div><!-- /.col -->
                 </div><!-- /.row -->
             </div><!-- /.container -->
-        </section><!-- /.section --><section class="section black-background active-section">
+        </section><!-- /.section --><section class="section footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="column-one-half">
                         <ul class="list-inline">
                             <li><a href="#" title="" class="strong-text">About</a></li>
                             <li><a href="#" title="" class="strong-text">Overview</a></li>
@@ -90,7 +90,7 @@
                             <li><a href="#" title="" class="strong-text">Contact Us</a></li>
                         </ul>
                     </div><!-- /.col -->
-                    <div class="col-md-6 text-right">
+                    <div class="column-one-half text-right">
                         <p>© 2015 - GRS Application by Alan & Rhiza</p>
                     </div><!-- /.col -->
                 </div><!-- /.row -->

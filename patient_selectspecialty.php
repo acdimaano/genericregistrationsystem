@@ -31,7 +31,7 @@
             <div class="background-image" style="background: url(images/admin_header.jpg)"></div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="column-whole">
                         <h1>Select Speciality</h1>
                         <p class="">Choose the service you needed</p>
                         <ol class="option-menu">
@@ -43,91 +43,91 @@
         </div><!-- /.section --><section class="section big-padding active-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
-                        <div class="paper shadow-1 blue-background text-center">
+                    <div class="column-one-fourth">
+                        <div class="paper blue-background text-center">
                             <a href="patient_doctorlist.php"><img src="images/neuro.gif" alt="neuro"></a>
                             <a href="patient_doctorlist.php"><h4>Neurologist</h4></a>
                         </div><!-- /.paper -->
                     </div><!-- /.col -->
-                    <div class="col-md-3">
-                        <div class="paper shadow-1 pink-background text-center">
+                    <div class="column-one-fourth">
+                        <div class="paper pink-background text-center">
                             <a href="patient_doctorlist.php"><img src="images/cardio.gif" alt="cardio"></a>
                             <a href="patient_doctorlist.php"><h4>Cardiologist</h4></a>
                         </div><!--/.paper -->
                     </div><!-- /.col -->
-                    <div class="col-md-3">
-                        <div class="paper shadow-1 green-background text-center">
+                    <div class="column-one-fourth">
+                        <div class="paper green-background text-center">
                             <a href="patient_doctorlist.php"><img src="images/natmed.gif" alt="natmed"></a>
                             <a href="patient_doctorlist.php"><h4>Natural Medicine</h4></a>
                         </div><!--/.paper -->
                     </div><!-- /.col -->
-                    <div class="col-md-3">
-                        <div class="paper shadow-1 yellow-background text-center">
+                    <div class="column-one-fourth">
+                        <div class="paper yellow-background text-center">
                             <a href="patient_doctorlist.php"><img src="images/dentist.gif" alt="dentist"></a>
                             <a href="patient_doctorlist.php"><h4>Dentist</h4></a>
                         </div><!--/.paper -->
                     </div><!-- /.col -->
 					
-					<div class="col-md-3">
-                        <div class="paper shadow-1 pink-background text-center">
+					<div class="column-one-fourth">
+                        <div class="paper  pink-background text-center">
                             <a href="patient_doctorlist.php"><img src="images/lab.gif" alt="lab"></a>
                             <a href="patient_doctorlist.php"><h4>Laboratory</h4></a>
                         </div><!--/.paper -->
                     </div><!-- /.col -->
-					<div class="col-md-3">
-                        <div class="paper shadow-1 yellow-background text-center">
+					<div class="column-one-fourth">
+                        <div class="paper yellow-background text-center">
                             <a href="patient_doctorlist.php"><img src="images/internist.gif" alt="internist"></a>
                             <a href="patient_doctorlist.php"><h4>Internist</h4></a>
                         </div><!--/.paper -->
                     </div><!-- /.col -->
-					<div class="col-md-3">
-                        <div class="paper shadow-1 blue-background text-center">
+					<div class="column-one-fourth">
+                        <div class="paper blue-background text-center">
                             <a href="patient_doctorlist.php"><img src="images/ortho.gif" alt="ortho"></a>
                             <a href="patient_doctorlist.php"><h4>Orthopedic</h4></a>
                         </div><!-- /.paper -->
                     </div><!-- /.col -->
-					<div class="col-md-3">
-                        <div class="paper shadow-1 green-background text-center">
+					<div class="column-one-fourth">
+                        <div class="paper green-background text-center">
                             <a href="patient_doctorlist.php"><img src="images/pulmo.gif" alt="pulmo"></a>
                             <a href="patient_doctorlist.php"><h4>Pulmonologist</h4></a>
 						</div><!--/.paper -->
 					</div><!-- /.col -->
 					
-					<div class="col-md-3">
-                        <div class="paper shadow-1 green-background text-center">
+					<div class="column-one-fourth">
+                        <div class="paper green-background text-center">
                             <a href="patient_doctorlist.php"><img src="images/pedia.gif" alt="pedia"></a>
                             <a href="patient_doctorlist.php"><h4>Pediatrician</h4></a>
 						</div><!--/.paper -->
 					</div><!-- /.col -->
-					<div class="col-md-3">
-                        <div class="paper shadow-1 blue-background text-center">
+					<div class="column-one-fourth">
+                        <div class="paper blue-background text-center">
                             <a href="patient_doctorlist.php"><img src="images/eye.gif" alt="eye"></a>
                             <a href="patient_doctorlist.php"><h4>Eye Center</h4></a>
                         </div><!-- /.paper -->
                     </div><!-- /.col -->
-					<div class="col-md-3">
-                        <div class="paper shadow-1 pink-background text-center">
+					<div class="column-one-fourth">
+                        <div class="paper pink-background text-center">
                             <a href="patient_doctorlist.php"><img src="images/fammed.gif" alt="fammed"></a>
                             <a href="patient_doctorlist.php"><h4>Family Medicine</h4></a>
                         </div><!--/.paper -->
                     </div><!-- /.col -->
-					<div class="col-md-3">
-                        <div class="paper shadow-1 yellow-background text-center">
+					<div class="column-one-fourth">
+                        <div class="paper yellow-background text-center">
                             <a href="patient_doctorlist.php"><img src="images/ob.gif" alt="ob"></a>
                             <a href="patient_doctorlist.php"><h4>OB Gynecologist</h4></a>
                         </div><!--/.paper -->
                     </div><!-- /.col -->
                 </div><!-- /.row -->
             </div><!-- /.container -->
-        </section><!-- /.section --><!--/.section--><section class="section black-background active-section">
+        </section><!-- /.section --><!--/.section--><section class="section footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="column-one-half">
                         <p>Medical City<br/>
 						#820 Symond St. Auckland CBD<br/>
 						0800 634 8892</p>
                     </div><!-- /.col -->
-                    <div class="col-md-6 text-right">
+                    <div class="column-one-half text-right">
                         <p><br/>© 2015 - GRS Application by Alan & Rhiza</p>
                     </div><!-- /.col -->
                 </div><!-- /.row -->

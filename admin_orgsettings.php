@@ -31,7 +31,7 @@
             <div class="background-image" style="background-image:url(images/admin_header.jpg)";></div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="column-whole">
                         <h1>Defining Organization</h1>
                         <p class="">Provide your organization's details</p>
                         <ol class="option-menu">
@@ -66,40 +66,40 @@
                         </script><section class="section big-padding active-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="column-whole">
                         <form data-toggle="validator" id="template-contactform" name="template-contactform" action="admin_orgsettings.php" method="post" role="form" novalidate="true">
 
                             <div class="form-process"></div>
 
-                            <div class="col-md-8 form-group">
+                            <div class="column-two-third form-group">
                                 <label for="template-contactform-name">Organization Name <small>*</small></label>
                                 <input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="form-control" required="">
                                 <div class="help-block with-errors"></div>
                             </div>
 
-                            <div class="col-md-4 form-group">
+                            <div class="column-one-third form-group">
                                 <label for="template-contactform-phone">Contact Number <small>*</small></label>
                                 <input type="text" id="template-contactform-phone" name="template-contactform-phone" value="" class="form-control" required="">
                                 <div class="help-block with-errors"></div>
                             </div>
 
-                            <div class="col-md-8 form-group">
+                            <div class="column-two-third form-group">
                                 <label for="template-contactform-subject">Address <small>*</small></label>
                                 <input type="text" id="template-contactform-subject" name="template-contactform-subject" value="" class="form-control" required="">
                                 <div class="help-block with-errors"></div>
                             </div>
 
-                            <div class="col-md-12">                                
+                            <div class="column-whole">                                
                                 <p id="contact-form-result"></p>
                                 <br>
                             </div><!--/.col-->
 
-                            <div class="col-md-2">
-                                <button class="btn btn-punch btn-xs btn-black disabled" type="submit" id="submit-org-changes" value="submit" style="pointer-events: all; cursor: pointer;">Save Changes</button>
+                            <div class="column-one-sixth">
+                                <button class="btn btn-save-cancel btn-small" type="submit" id="submit-org-changes" value="submit" style="pointer-events: all; cursor: pointer;">Save Changes</button>
                             </div>
 							
-							<div class="col-md-2">
-                                <button class="btn btn-punch btn-xs btn-black disabled" type="submit" id="cancel-org-changes" value="submit">Cancel Changes</button>
+							<div class="column-one-sixth">
+                                <button class="btn btn-save-cancel btn-small" type="submit" id="cancel-org-changes" value="submit">Cancel Changes</button>
                             </div>
 							<!--action for cancelling the changes made-->
 							<script type="text/javascript">
@@ -112,10 +112,10 @@
                     </div><!-- /.col -->
                 </div><!-- /.row -->
             </div><!-- /.container -->
-        </section><!-- /.section --><section class="section black-background active-section">
+        </section><!-- /.section --><section class="section footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="column-one-half">
                         <ul class="list-inline">
                             <li><a href="#" title="" class="strong-text">About</a></li>
                             <li><a href="#" title="" class="strong-text">Overview</a></li>
@@ -124,7 +124,7 @@
                             <li><a href="#" title="" class="strong-text">Contact Us</a></li>
                         </ul>
                     </div><!-- /.col -->
-                    <div class="col-md-6 text-right">
+                    <div class="column-one-half text-right">
                         <p>© 2015 - GRS Application by Alan & Rhiza</p>
                     </div><!-- /.col -->
                 </div><!-- /.row -->

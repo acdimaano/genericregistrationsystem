@@ -31,7 +31,7 @@
             <div class="background-image" style="background-image: url(images/admin_header.jpg)"></div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="column-whole">
                         <h1>List of Doctors</h1>
                         <p>Choose your preferred doctor based from the speciality you have selected</p>
                         <ol class="option-menu">
@@ -44,11 +44,11 @@
 		<div class="section record-details">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="column-whole">
                         <div class="content">
                             <div class="row">
 							
-                                <div class="col-md-4 col-lg-3">
+                                <div class="column-one-third space-one-fourth">
                                 <div class="details">
                                     <div class="details-header">
                                         <h3 class="details-name">Dr Rhiza Roque</h3>
@@ -69,7 +69,7 @@
                                 </div><!--/.entry-->
                                 </div><!--/.col-->
 
-                                <div class="col-md-4 col-lg-3">
+                                <div class="column-one-third space-one-fourth">
                                 <div class="details">
                                     <div class="details-header">
                                         <h3 class="details-name">Dr Callie Torres</h3>
@@ -90,7 +90,7 @@
                                 </div><!--/.entry-->
                                 </div><!--/.col-->
 
-                                <div class="col-md-4 col-lg-3">
+                                <div class="column-one-third space-one-fourth">
                                 <div class="details">
                                     <div class="details-header">
                                         <h3 class="details-name">Dr Rhiza Roque</h3>
@@ -111,49 +111,7 @@
                                 </div><!--/.entry-->
                                 </div><!--/.col-->
 
-                                <div class="col-md-4 col-lg-3">
-                                <div class="details">
-                                    <div class="details-header">
-                                        <h3 class="details-name">Dr Callie Torres</h3>
-                                        <ul class="details-header-desc list-inline">
-                                            <li>Specialty:</li>
-                                            <li>Neurologist</li>
-                                        </ul>
-                                    </div><!--/.entry-top-->
-                                    <div>
-                                        <p>Room No. 502<br />
-											9am - 12nn<br />
-											Mon, Tue, Wed, Thur, Fri, Sat</p>
-										<p></p>
-                                    </div>
-                                    <div class="details-link">
-											<p><a href="patient_number.php">Choose this Doctor</a></p>
-                                        </div><!--/.entry-bottom-->
-                                </div><!--/.entry-->
-                                </div><!--/.col-->
-								
-								<div class="col-md-4 col-lg-3">
-                                <div class="details">
-                                    <div class="details-header">
-                                        <h3 class="details-name">Dr Rhiza Roque</h3>
-                                        <ul class="details-header-desc list-inline">
-                                            <li>Specialty:</li>
-                                            <li>Neurologist</li>
-                                        </ul>
-                                    </div><!--/.entry-top-->
-                                    <div>
-                                        <p>Room No. 1108<br />
-											9am - 12nn<br />
-											Tue, Thur, Sat</p>
-										<p></p>
-                                    </div>
-                                    <div class="details-link">
-											<p><a href="patient_number.php">Choose this Doctor</a></p>
-                                        </div><!--/.entry-bottom-->
-                                </div><!--/.entry-->
-                                </div><!--/.col-->
-
-                                <div class="col-md-4 col-lg-3">
+                                <div class="column-one-third space-one-fourth">
                                 <div class="details">
                                     <div class="details-header">
                                         <h3 class="details-name">Dr Callie Torres</h3>
@@ -174,7 +132,7 @@
                                 </div><!--/.entry-->
                                 </div><!--/.col-->
 								
-								<div class="col-md-4 col-lg-3">
+								<div class="column-one-third space-one-fourth">
                                 <div class="details">
                                     <div class="details-header">
                                         <h3 class="details-name">Dr Rhiza Roque</h3>
@@ -195,7 +153,7 @@
                                 </div><!--/.entry-->
                                 </div><!--/.col-->
 
-                                <div class="col-md-4 col-lg-3">
+                                <div class="column-one-third space-one-fourth">
                                 <div class="details">
                                     <div class="details-header">
                                         <h3 class="details-name">Dr Callie Torres</h3>
@@ -216,7 +174,7 @@
                                 </div><!--/.entry-->
                                 </div><!--/.col-->
 								
-								<div class="col-md-4 col-lg-3">
+								<div class="column-one-third space-one-fourth">
                                 <div class="details">
                                     <div class="details-header">
                                         <h3 class="details-name">Dr Rhiza Roque</h3>
@@ -237,7 +195,7 @@
                                 </div><!--/.entry-->
                                 </div><!--/.col-->
 
-                                <div class="col-md-4 col-lg-3">
+                                <div class="column-one-third space-one-fourth">
                                 <div class="details">
                                     <div class="details-header">
                                         <h3 class="details-name">Dr Callie Torres</h3>
@@ -255,6 +213,48 @@
                                     <div class="details-link">
 											<p><a href="patient_number.php">Choose this Doctor</a></p>
                                         </div><!--/.entry-bottom-->
+                                </div><!--/.entry-->
+                                </div><!--/.col-->
+								
+								<div class="column-one-third space-one-fourth">
+                                <div class="details">
+                                    <div class="details-header">
+                                        <h3 class="details-name">Dr Rhiza Roque</h3>
+                                        <ul class="details-header-desc list-inline">
+                                            <li>Specialty:</li>
+                                            <li>Neurologist</li>
+                                        </ul>
+                                    </div><!--/.entry-top-->
+                                    <div>
+                                        <p>Room No. 1108<br />
+											9am - 12nn<br />
+											Tue, Thur, Sat</p>
+										<p></p>
+                                    </div>
+                                    <div class="details-link">
+											<p><a href="patient_number.php">Choose this Doctor</a></p>
+                                        </div><!--/.entry-bottom-->
+                                </div><!--/.entry-->
+                                </div><!--/.col-->
+
+                                <div class="column-one-third space-one-fourth">
+                                <div class="details">
+                                    <div class="details-header">
+                                        <h3 class="details-name">Dr Callie Torres</h3>
+                                        <ul class="details-header-desc list-inline">
+                                            <li>Specialty:</li>
+                                            <li>Neurologist</li>
+                                        </ul>
+                                    </div><!--/.entry-top-->
+                                    <div>
+                                        <p>Room No. 502<br />
+											9am - 12nn<br />
+											Mon, Tue, Wed, Thur, Fri, Sat</p>
+										<p></p>
+                                    </div>
+                                    <div class="details-link">
+										<p><a href="patient_number.php">Choose this Doctor</a></p>
+                                    </div><!--/.entry-bottom-->
                                 </div><!--/.entry-->
                                 </div><!--/.col-->
 							</div><!--/.row-->
@@ -262,15 +262,15 @@
                     </div><!--/.col-->
                 </div><!--/.row-->
             </div><!--/.container-->
-        </div><!--/.section--><section class="section black-background active-section">
+        </div><!--/.section--><section class="section footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="column-one-half">
                         <p>Medical City<br/>
 						#820 Symond St. Auckland CBD<br/>
 						0800 634 8892</p>
                     </div><!-- /.col -->
-                    <div class="col-md-6 text-right">
+                    <div class="column-one-half text-right">
                         <p><br/>© 2015 - GRS Application by Alan & Rhiza</p>
                     </div><!-- /.col -->
                 </div><!-- /.row -->
