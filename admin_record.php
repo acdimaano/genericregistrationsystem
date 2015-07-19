@@ -24,7 +24,13 @@
 
 </head>
 
+<form method="post" action="php/admin_user_functions.php" >
 <body>
+
+<!-- Hidden fields -->
+
+<input type="hidden" name="admin_page" value="doctor">
+
     <!-- Defining the page layout -->
     <div class="page-layout">
 		<div class="header page-title background-header">
@@ -105,7 +111,7 @@
 
                             <div class="column-one-third form-group">
                                 <label>Clinic Room No <small>*</small></label>
-                                <input type="text" id="room" name="room number" value="" class="form-control" required="">
+                                <input type="text" id="room" name="room_number" value="" class="form-control" required="">
                                 <div class="help-block with-errors"></div>
                             </div>
 
@@ -137,21 +143,21 @@
 
                             <div class="column-whole form-group">
                                 <label style="padding-bottom: 10px">Select Availability <small>*</small></label><br />
-								<input type="checkbox" id="m" name="day" value="" style="margin-right: 5px" required="">Monday
-								<input type="checkbox" id="tu" name="day" value="" style="margin-right:5px; margin-left:80px" required="">Tuesday
-								<input type="checkbox" id="w" name="day" value="" style="margin-right:5px; margin-left:80px" required="">Wednesday
-								<input type="checkbox" id="th" name="day" value="" style="margin-right:5px; margin-left:80px" required="">Thursday
-								<input type="checkbox" id="f" name="day" value="" style="margin-right:5px; margin-left:80px" required="">Friday
-								<input type="checkbox" id="s" name="day" value="" style="margin-right:5px; margin-left:80px" required="">Saturday
+								<input type="checkbox" id="m" name="day" value="m" style="margin-right: 5px" required="">Monday
+								<input type="checkbox" id="tu" name="day" value="tu" style="margin-right:5px; margin-left:80px" required="">Tuesday
+								<input type="checkbox" id="w" name="day" value="w" style="margin-right:5px; margin-left:80px" required="">Wednesday
+								<input type="checkbox" id="th" name="day" value="th" style="margin-right:5px; margin-left:80px" required="">Thursday
+								<input type="checkbox" id="f" name="day" value="f" style="margin-right:5px; margin-left:80px" required="">Friday
+								<input type="checkbox" id="s" name="day" value="s" style="margin-right:5px; margin-left:80px" required="">Saturday
                                 <div class="help-block with-errors"></div>
                             </div>
 							
 							
 							<div class="column-whole form-group">
                                 <label style="padding-bottom: 10px; padding-top:10px">Select Time Schedule <small>*</small></label><br />
-								<input type="radio" id="am" name="time" value="" style="margin-right: 5px;" required="">Morning (8am to 12nn)
-								<input type="radio" id="pm" name="time" value="" style="margin-right:5px; margin-left:80px" required="">Afternoon (1pm to 5pm)
-								<input type="radio" id="fm" name="time" value="" style="margin-right:5px; margin-left:80px" required="">Full Day (9am to 4pm)
+								<input type="radio" id="am" name="time" value="am" style="margin-right: 5px;" required="">Morning (8am to 12nn)
+								<input type="radio" id="pm" name="time" value="pm" style="margin-right:5px; margin-left:80px" required="">Afternoon (1pm to 5pm)
+								<input type="radio" id="fm" name="time" value="fm" style="margin-right:5px; margin-left:80px" required="">Full Day (9am to 4pm)
                                 <div class="help-block with-errors"></div>
                             </div>
 
@@ -205,4 +211,6 @@
 
 
 
-</body></html>
+</body>
+</form>
+</html>

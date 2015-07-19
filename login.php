@@ -30,7 +30,7 @@
 	<style type="text/css"></style>
 </head>
 
-<form method="post" action="php/login.php" >
+<form method="post" action="php/login_functions.php" >
 <body>
     <!-- Defining the page layout -->
     <div class="page-layout">  
@@ -74,13 +74,19 @@
 
                             <div class="column-one-third form-group">
                                 <label><font color="white" size="5">Email<small>*</small></font></label>
-                                <input type="text" id="user_id" name="user_id" value="" class="form-control" required="">
+                                <input type="text" id="login_email" name="login_email" value="" class="form-control" required="">
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="column-one-third form-group">
                                 <label><font color="white" size="5">Password<small>*</small></font></label>
-                                <input type="text" id="user_password" name="user_password" value="" class="form-control" required="">
+                                <input type="password" id="login_password" name="login_password" value="" class="form-control" required="">
                                 <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="column-one-sixth">
+                                <button class="btn btn-save-cancel btn-small" type="submit" id="login_user" name="login_user" value="submit" style="pointer-events: all; cursor: pointer;">Login</button>
+                            </div>
+							<div class="column-one-sixth">
+                                <button class="btn btn-save-cancel btn-small" type="submit" id="cancel_login_user" name="cancel_login_user" value="submit" style="pointer-events: all; cursor: pointer;">Cancel</button>
                             </div>
                 </div>
             </div>

@@ -74,7 +74,7 @@
                         <div class="element">
                             <p class="welcome-text">A friendly application for doctors and patients. Patient can view and set an appointment
 									with their doctors. Doctors can access their patient records.</p>
-                            <p><a class="btn btn-pink login-window"  role="button">Login</a>
+                            <p><a class="btn btn-pink login-window" role="button">Login</a>
                             </p>
                         </div>
                     </div>

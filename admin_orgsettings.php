@@ -24,6 +24,7 @@
 
 </head>
 
+<form method="post" action="php/admin_org_functions.php" >
 <body>
     <!-- Defining the page layout -->
     <div class="page-layout">   
@@ -141,4 +142,6 @@
 
 
 
-</body></html>
+</body>
+</form>
+</html>

@@ -24,6 +24,7 @@
 
 </head>
 
+<form method="post" action="php/patient_functions.php" >
 <body>
     <!-- Defining the page layout -->
     <div class="page-layout">
@@ -70,43 +71,43 @@
 
                             <div class="column-one-third form-group">
                                 <label>First Name <small>*</small></label>
-                                <input type="text" id="fname" class="form-control" required="">
+                                <input type="text" id="fname" name="fname" class="form-control" required="">
                                 <div class="help-block with-errors"></div>
                             </div>
 
                             <div class="column-one-third form-group">
                                 <label>Last Name <small>*</small></label>
-                                <input type="text" id="lname" value="" class="form-control" required="">
+                                <input type="text" id="lname" name="lname" value="" class="form-control" required="">
                                 <div class="help-block with-errors"></div>
                             </div>
 
                             <div class="column-one-third form-group">
                                 <label>Middle Name</label>
-                                <input type="text" id="mi" value="" class="form-control">
+                                <input type="text" id="middlename" name="middlename" value="" class="form-control">
                             </div>
 
 							<div class="column-two-third form-group">
                                 <label style="padding-bottom: 15px">Gender <small>*</small></label><br />
-								<input type="radio" id="m" name="gender" value="" style="margin-right:5px;" required="">Male
-								<input type="radio" id="f" name="gender" value="" style="margin-right:5px; margin-left:80px" required="">Female
-								<input type="radio" id="o" name="gender" value="" style="margin-right:5px; margin-left:80px" required="">Other
+								<input type="radio" name="gender" value="m" style="margin-right:5px;" required="">Male
+								<input type="radio" name="gender" value="f" style="margin-right:5px; margin-left:80px" required="">Female
+								<input type="radio" name="gender" value="o" style="margin-right:5px; margin-left:80px" required="">Other
 								<div class="help-block with-errors"></div>
                             </div>
 							
                             <div class="column-one-third form-group">
                                 <label>Date of Birth</label>
-                                <input type="date" id="bdate" class="form-control">
+                                <input type="date" id="bdate" name="bdate" class="form-control">
                                 <div class="help-block with-errors"></div>
                             </div>
 							
                             <div class="column-two-third form-group">
                                 <label>Home Address</label>
-                                <input type="text" id="address" class="form-control">
+                                <input type="text" id="address" name="address" class="form-control">
                             </div>
 
 							<div class="column-one-third form-group">
                                 <label>Phone No.</label>
-                                <input type="text" id="phone" class="form-control">
+                                <input type="text" id="phone" name="phone" class="form-control">
                             </div>
 							
                             <div class="column-whole form-group">
@@ -115,7 +116,7 @@
 							
 							<div class="column-one-third form-group">
                                 <label>NHI</label>
-                                <input type="text" id="nhi" class="form-control">
+                                <input type="text" id="nhi" name="nhi" class="form-control">
                             </div>
 		
                             <div class="column-whole">                                
@@ -163,5 +164,5 @@
     <script src="js/scripts.js"></script>
 
 
-
+</form>
 </body></html>

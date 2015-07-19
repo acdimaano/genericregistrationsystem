@@ -24,6 +24,7 @@
 
 </head>
 
+<form method="post" action="php/admin_functions.php" >
 <body>
     <!-- Defining the page layout -->
     <div class="page-layout">
@@ -97,7 +98,7 @@
 
                             <div class="column-one-third form-group">
                                 <label>Access Type <small>*</small></label>
-                                <select id="access" name="access type" class="form-control" required="">
+                                <select id="access" name="access_type" class="form-control" required="">
                                     <option value="">-- Select One --</option>
                                     <option value="admin">Site Admin</option>
                                     <option value="doctor">Doctor Account</option>
@@ -114,7 +115,7 @@
 							
 							<div class="column-one-third form-group">
                                 <label>Confirm Password <small>*</small></label>
-                                <input type="password" id="pw" name="password" value="" class="form-control" required="">
+                                <input type="password" id="pw" name="confirm_password" value="" class="form-control" required="">
                                 <div class="help-block with-errors"></div>
                             </div>
 
@@ -167,5 +168,5 @@
     <script src="js/scripts.js"></script>
 
 
-
+</form>
 </body></html>
