@@ -33,15 +33,6 @@
                 <div class="row">
                     <div class="column-whole">
                         <h1>GRS Application</h1>
-                        <p>Howdy Admin!!! Configure your organization's details here. </p>
-                        <ol class="option-menu">
-							<li class="selected">Home</li>
-                            <li><a href="admin_user.php">User</a></li>
-                            <li><a href="admin_record.php">Doctor</a></li>
-                            <li><a href="admin_directory.php">Directory</a></li>
-							<li><a href="admin_orgsettings.php">Settings</a></li>
-							<li><a href="index.php">Logout</a></li>
-                        </ol>
                     </div><!--/.col-->
                 </div><!--/.row-->
             </div><!--/.container-->
@@ -49,31 +40,40 @@
             <div class="container">
                 <div class="row">
                     <div class="column-one-fourth">
-                        <div class="paper pink-background text-center">
-                            <a href="admin_user.php"><img src="images/user.gif" alt="Add/Update User"></a>
-                            <a href="admin_user.php"><h4>Add/Update Users</h4></a>
-                            <p class="admin-option">Add, update or remove any user account to limit the access in our system</p>
+                        <div class="paper yellow-background text-center">
+                            <img src="images/about.gif" alt="About Us">
+                            <h4>About Us</h4>
+                            <p class="admin-option">Alan and Rhiza are students from Cornell Institute of Business and Technology taking up Software Development.
+													This website is created as one of their requirements, but as the same
+													time this will be used in the industry.</p>
                         </div><!-- /.paper -->
                     </div><!-- /.col -->
                     <div class="column-one-fourth">
-                        <div class="paper yellow-background text-center">
-                            <a href="admin_record.php"><img src="images/doctor.gif" alt="Add/Update Doctor"></a>
-                            <a href="admin_record.php"><h4>Add/Update Doctors</h4></a>
-                            <p class="admin-option">You can add or update records so our patients can view all of our doctor's details</p>
-                        </div><!--/.paper -->
-                    </div><!-- /.col -->
-                    <div class="column-one-fourth">
                         <div class="paper blue-background text-center">
-                            <a href="admin_directory.php"><img src="images/directory.gif" alt="People Directory"></a>
-                            <a href="admin_directory.php"><h4>People Directory</h4></a>
-                            <p class="admin-option">Contains the list of all user account and doctors that are currently available</p>
+                            <img src="images/overview.gif" alt="Overview">
+                            <h4>Overview</h4>
+                            <p class="admin-option">Generic Registration System is an application which can be widely used on different
+													industry, such as hospitals, schools, libraries, hotels and offices. This can be customized
+													based on the specific industry that will use this application.</p>
                         </div><!--/.paper -->
                     </div><!-- /.col -->
                     <div class="column-one-fourth">
-                        <div class="paper green-background text-center">
-                            <a href="admin_orgsettings.php"><img src="images/settings.gif" alt="Organization Settings" ></a>
-                            <a href="admin_orgsettings.php"><h4>Org Settings</h4></a>
-                            <p class="admin-option">Define the organization name and upload logo that represents our brand</p>
+                         <div class="paper green-background text-center">
+                            <img src="images/contact.gif" alt="Contact Us">
+                            <h4>Contact Us</h4>
+                            <p class="admin-option">Feel free to give comments and suggestions to better improve this application. Here
+													are their email address: <a style="color:#fff" href="mailto:acdimaano@gmail.com">acdimaano@gmail.com</a> or 
+													<a style="color:#fff" href="mailto:rhizaroque@gmail.com">rhizaroque@gmail.com</a>. 
+													The authors are open to hearing your feedback.</p>
+                        </div><!--/.paper -->
+                    </div><!-- /.col -->
+                    <div class="column-one-fourth">
+                        <div class="paper pink-background text-center">
+                            <img src="images/help.gif" alt="Help">
+                            <h4>Help</h4>
+                            <p class="admin-option">If you got any questions or got stuck into something along the application you can reach
+													the developers via their emails as indicated in the Contact Us section. For any urgent
+													matter you can send a message via viber at +639223649812.</p>
                         </div><!--/.paper -->
                     </div><!-- /.col -->
                 </div><!-- /.row -->
@@ -83,10 +83,11 @@
                 <div class="row">
                     <div class="column-one-half">
                         <ul class="list-inline">
-                            <li><a href="footer_details.php" target="_blank" class="strong-text">About Us</a></li>
-                            <li><a href="footer_details.php" target="_blank" class="strong-text">Overview</a></li>
-                            <li><a href="footer_details.php" target="_blank" class="strong-text">Contact Us</a></li>
-							<li><a href="footer_details.php" target="_blank" class="strong-text">Help</a></li>
+                            <li><a href="#" title="" class="strong-text">About</a></li>
+                            <li><a href="#" title="" class="strong-text">Overview</a></li>
+                            <li><a href="#" title="" class="strong-text">Help</a></li>
+                            <li><a href="#" title="" class="strong-text">Terms</a></li>
+                            <li><a href="#" title="" class="strong-text">Contact Us</a></li>
                         </ul>
                     </div><!-- /.col -->
                     <div class="column-one-half text-right">
@@ -100,7 +101,5 @@
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
-
-
 
 </body></html>

@@ -57,7 +57,7 @@
                             <h1 class="strong-text">Welcome to Medical City!</h1>
 							<h3 class="strong-text">Access your patient details in just a click.
                             <div class="space"></div>
-                            <p><a href="doctor_patientqueue.php" class="btn btn-white" role="button">Patient Queue</a> <a href="doctor_patientdone.php" class="btn btn-pink" role="button">Patient Done</a>
+                            <p><a href="doctor_patientqueue.php?doctor_number=<?php echo $_GET["doctor_number"]; ?>" class="btn btn-white" role="button">Patient Queue</a> <a href="doctor_patientdone.php?doctor_number=<?php echo $_GET["doctor_number"]; ?>"" class="btn btn-pink" role="button">Patient Done</a>
                             </p>
                         </h1></div>
                     </div>

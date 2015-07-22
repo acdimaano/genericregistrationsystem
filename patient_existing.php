@@ -24,6 +24,7 @@
 
 </head>
 
+<form data-toggle="validator" id="template-contactform" name="template-contactform" action="php\patient_existing_functions.php" method="post" role="form" novalidate="true">
 <body>
     <!-- Defining the page layout -->
     <div class="page-layout">    
@@ -62,13 +63,12 @@
             <div class="container">
                 <div class="row">
                     <div class="column-whole">
-                        <form data-toggle="validator" id="template-contactform" name="template-contactform" action="patient_selectspecialty.php" method="post" role="form" novalidate="true">
 
                             <div class="form-process"></div>
 
                             <div class="column-one-third form-group">
                                 <label for="template-contactform-name">NHI <small>*</small></label>
-                                <input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="form-control" required="">
+                                <input type="text" id="nhi" name="nhi" value="" class="form-control" required="">
                                 <div class="help-block with-errors"></div>
                             </div>
 
@@ -84,7 +84,7 @@
                                 <button class="btn btn-save-cancel btn-small disabled" type="submit" id="cancel-patient" value="submit" style="pointer-events: all; cursor: pointer;">Cancel</button>
                             </div>
 
-                        </form><!--/.form-->
+                        
                         
                     </div><!-- /.col -->
                 </div><!-- /.row -->
@@ -111,4 +111,6 @@
 
 
 
-</body></html>
+</body>
+</form><!--/.form-->
+</html>

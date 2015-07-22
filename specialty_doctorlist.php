@@ -55,7 +55,6 @@
 								$conn = getConnection();
 								
 								$specialty = $_GET["specialty"]; 
-								$patient_number = $_GET["patient_number"];
 								
 								$query = "select oid, first_name, last_name, specialty, time_avail, days_avail, room_no from tbuser where specialty = '$specialty'";
 								$result = mysqli_query($conn, $query);
@@ -108,7 +107,7 @@
 												echo "<p></p>";
 											echo "</div>";
 											echo "<div class='details-link'>";
-													echo "<p><a href='php\patient_number_functions.php?patient_number=$patient_number&doctor_number=$doctor_number'>Choose this Doctor</a></p>";
+													echo "<p><a href='doctor_welcome.php?doctor_number=$doctor_number'>Choose this Doctor</a></p>";
 												echo "</div>";
 										echo "</div>";
 										echo "</div>";
@@ -116,6 +115,7 @@
 								}
 								closeConnection($conn);	
 							?>
+
 							</div><!--/.row-->
                         </div><!--/.content-->
                     </div><!--/.col-->

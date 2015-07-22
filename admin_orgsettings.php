@@ -113,16 +113,16 @@
                     </div><!-- /.col -->
                 </div><!-- /.row -->
             </div><!-- /.container -->
-        </section><!-- /.section --><section class="section footer">
+        </section><!-- /.section -->
+		<section class="section footer">
             <div class="container">
                 <div class="row">
                     <div class="column-one-half">
                         <ul class="list-inline">
-                            <li><a href="#" title="" class="strong-text">About</a></li>
-                            <li><a href="#" title="" class="strong-text">Overview</a></li>
-                            <li><a href="#" title="" class="strong-text">Help</a></li>
-                            <li><a href="#" title="" class="strong-text">Terms</a></li>
-                            <li><a href="#" title="" class="strong-text">Contact Us</a></li>
+                            <li><a href="footer_details.php" target="_blank" class="strong-text">About Us</a></li>
+                            <li><a href="footer_details.php" target="_blank" class="strong-text">Overview</a></li>
+                            <li><a href="footer_details.php" target="_blank" class="strong-text">Contact Us</a></li>
+							<li><a href="footer_details.php" target="_blank" class="strong-text">Help</a></li>
                         </ul>
                     </div><!-- /.col -->
                     <div class="column-one-half text-right">

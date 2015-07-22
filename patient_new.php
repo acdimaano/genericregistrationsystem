@@ -22,27 +22,7 @@
     <!-- Required CSS Files -->
     <link href="css/style.css" rel="stylesheet">
 
-</head>
-
-<form method="post" action="php/patient_functions.php" >
-<body>
-    <!-- Defining the page layout -->
-    <div class="page-layout">
-		<div class="header page-title background-header">
-            <div class="background-image" style="background-image: url(images/admin_header.jpg)"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="column-whole">
-                        <h1>Welcome Patient</h1>
-                        <p class="">Please complete your profile for our record</p>
-						<!--this will be remove-->
-                        <ol class="option-menu">
-                            <li><a href="patient_welcome.php">Back to Home</a></li>
-                        </ol>
-                    </div><!--/.col-->
-                </div><!--/.row-->
-            </div><!--/.container-->
-        </div><!-- /.section --><script type="text/javascript">
+		<script type="text/javascript">
                         jQuery(document).ready(function(){
                                 $("#template-contactform").validator().on('submit', function (e) {
                                     $(this).ajaxSubmit({
@@ -61,11 +41,31 @@
                             });   
 
                         </script>
+</head>
+
+<form data-toggle="validator" id="template-contactform" name="template-contactform" method="post" action="php/patient_functions.php" >
+<body>
+    <!-- Defining the page layout -->
+    <div class="page-layout">
+		<div class="header page-title background-header">
+            <div class="background-image" style="background-image: url(images/admin_header.jpg)"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="column-whole">
+                        <h1>Welcome Patient</h1>
+                        <p class="">Please complete your profile for our record</p>
+						<!--this will be remove-->
+                        <ol class="option-menu">
+                            <li><a href="patient_welcome.php">Back to Home</a></li>
+                        </ol>
+                    </div><!--/.col-->
+                </div><!--/.row-->
+            </div><!--/.container-->
+        </div><!-- /.section -->
 			<section class="section big-padding active-section">
             <div class="container">
                 <div class="row">
                     <div class="column-whole">
-                        <form data-toggle="validator" id="template-contactform" name="template-contactform" action="patient_selectspecialty.php" method="post" role="form" novalidate="true">
 
                             <div class="form-process"></div>
 
@@ -136,8 +136,6 @@
 								location.href="patient_welcome.php";};
 							</script>	
 
-                        </form><!--/.form-->
-                        
                     </div><!-- /.col -->
                 </div><!-- /.row -->
             </div><!-- /.container -->
@@ -164,5 +162,7 @@
     <script src="js/scripts.js"></script>
 
 
+
+</body>
 </form>
-</body></html>
+</html>

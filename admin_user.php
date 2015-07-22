@@ -146,11 +146,10 @@
                 <div class="row">
                     <div class="column-one-half">
                         <ul class="list-inline">
-                            <li><a href="#" title="" class="strong-text">About</a></li>
-                            <li><a href="#" title="" class="strong-text">Overview</a></li>
-                            <li><a href="#" title="" class="strong-text">Help</a></li>
-                            <li><a href="#" title="" class="strong-text">Terms</a></li>
-                            <li><a href="#" title="" class="strong-text">Contact Us</a></li>
+                            <li><a href="footer_details.php" target="_blank" class="strong-text">About Us</a></li>
+                            <li><a href="footer_details.php" target="_blank" class="strong-text">Overview</a></li>
+                            <li><a href="footer_details.php" target="_blank" class="strong-text">Contact Us</a></li>
+							<li><a href="footer_details.php" target="_blank" class="strong-text">Help</a></li>
                         </ul>
                     </div><!-- /.col -->
                     <div class="column-one-half text-right">
@@ -167,6 +166,6 @@
     <script src="js/jquery.form.min.js"></script>
     <script src="js/scripts.js"></script>
 
-
+</body>
 </form>
-</body></html>
+</html>

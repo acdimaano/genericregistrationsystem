@@ -15,10 +15,10 @@
 	$result = mysqli_query($conn, $query);
 	
 	if ($result){
-		//header( "Location: http://localhost/genericregistrationsystem/admin_welcomepage.php" );
+		header( "Location: http://localhost/genericregistrationsystem/admin_welcomepage.php" );
 	}
 	else {
-		//header( "Location: http://localhost/genericregistrationsystem/admin_record.php" );
+		header( "Location: http://localhost/genericregistrationsystem/admin_record.php" );
 	}	
 
 	closeConnection($conn);

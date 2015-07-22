@@ -30,80 +30,71 @@
 	<style type="text/css"></style>
 </head>
 
-<form method="post" action="php/login_functions.php" >
+<form data-toggle="validator" id="template-contactform" method="post" action="php/login_functions.php" >
 <body>
     <!-- Defining the page layout -->
-    <div class="page-layout">  
-		<header id="header" class="section transparent white-header header active-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3">
-					<div class="logo">
-						<a href="" title="">
-							<img src="">
-						</a>
-					</div>
-				</div><!-- /.col-->
-				<div class="col-md-9 menu-col text-right">
-					<div class="menu">
-						<ul class="list-inline">
-							<li><a href="patient_welcome.php">Patient</a></li>
-							<li><a href="doctor_welcome.php">Doctor</a></li>
-							<!--this will be removed, work around only-->
-							<li><a href="admin_welcomepage.php">Admin</a></li>
-							<li><a href="#login-box" class="login-window">Login</a></li>
-						</ul>
-					</div>
-				</div><!-- /.col-->
-				<div class="header-line">
-					<div class="line"></div><!--/.line-->
-				</div><!-- /.header-line -->
-				<div class="menu-toggle">
-					<i class="ti-menu"></i>
-				</div>
-			</div>
-		</div><!-- /.container -->    
-    </header><!-- /header -->
-	
-        <!-- PARALLAX SECTION -->
-        <section class="bigger-padding section background-wrapper black-background active-section">
-            <div class="background-image parallax-background" data-stellar-background-ratio="0.5" style="background-image: url(images/index_screen.jpg)"></div>
+	<div class="page-layout">   
+		<div class="header page-title background-header">
+            <div class="background-image" style="background-image:url(images/admin_header.jpg)";></div>
             <div class="container">
                 <div class="row">
+                    <div class="column-whole">
+                        <h1>Login to GRS Application</h1>
+                        <p class="">Please provide your email address and password</p>
+                        <ol class="option-menu">
+                            <li><a href="index.php">Back to Home</a>
+                        </ol>
+                    </div><!--/.col-->
+                </div><!--/.row-->
+            </div><!--/.container-->
+        </div><!-- /.section -->
+			<section class="section big-padding active-section">
+            <div class="container">
+                <div class="row">
+                    <div class="column-whole">
                             <div class="form-process"></div>
 
                             <div class="column-one-third form-group">
-                                <label><font color="white" size="5">Email<small>*</small></font></label>
+                                <label>Email Address <small>*</small></label>
                                 <input type="text" id="login_email" name="login_email" value="" class="form-control" required="">
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="column-one-third form-group">
-                                <label><font color="white" size="5">Password<small>*</small></font></label>
+                                <label>Password <small>*</small></label>
                                 <input type="password" id="login_password" name="login_password" value="" class="form-control" required="">
-                                <div class="help-block with-errors"></div>
+								<div class="help-block with-errors"></div>
                             </div>
+                            <div class="column-whole">                                
+                            </div><!--/.col-->
+
                             <div class="column-one-sixth">
-                                <button class="btn btn-save-cancel btn-small" type="submit" id="login_user" name="login_user" value="submit" style="pointer-events: all; cursor: pointer;">Login</button>
+                                <button class="btn btn-save-cancel btn-small" type="submit" id="login" value="submit" style="pointer-events: all; cursor: pointer;">Login</button>
                             </div>
+							
 							<div class="column-one-sixth">
-                                <button class="btn btn-save-cancel btn-small" type="submit" id="cancel_login_user" name="cancel_login_user" value="submit" style="pointer-events: all; cursor: pointer;">Cancel</button>
+                                <button class="btn btn-save-cancel btn-small " type="submit" id="cancel_login" value="submit">Cancel</button>
                             </div>
-                </div>
-            </div>
-        </section>
-		<section class="section black-background active-section">
+							<!--action for cancelling the changes made-->
+							<script type="text/javascript">
+								document.getElementById("cancel-org-changes").onclick=function(){
+								location.href="index.php";};
+							</script>	
+
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.section --><section class="section footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="column-one-half">
                         <ul class="list-inline">
-                            <li><a href="#" title="" class="strong-text">About</a></li>
-                            <li><a href="#" title="" class="strong-text">Overview</a></li>
-                            <li><a href="#" title="" class="strong-text">Help</a></li>
-                            <li><a href="#" title="" class="strong-text">Terms</a></li>
-                            <li><a href="#" title="" class="strong-text">Contact Us</a></li>
+                            <li><a href="footer_details.php" target="_blank" class="strong-text">About Us</a></li>
+                            <li><a href="footer_details.php" target="_blank" class="strong-text">Overview</a></li>
+                            <li><a href="footer_details.php" target="_blank" class="strong-text">Contact Us</a></li>
+							<li><a href="footer_details.php" target="_blank" class="strong-text">Help</a></li>
                         </ul>
                     </div><!-- /.col -->
-                    <div class="col-md-6 text-right">
+                    <div class="column-one-half text-right">
                         <p>© 2015 - GRS Application by Alan & Rhiza</p>
                     </div><!-- /.col -->
                 </div><!-- /.row -->
@@ -113,18 +104,9 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/jquery.flexslider-min.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/stellar.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.localscroll.min.js"></script>
-    <script src="js/jquery.scrollto.min.js"></script>
     <script src="js/validator.min.js"></script>
     <script src="js/jquery.form.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
     <script src="js/scripts.js"></script>
-
-	<div id="grs-overlay-login" class="grs-hidden"></div>
 
 </body>
 </form>

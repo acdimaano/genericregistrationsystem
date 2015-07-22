@@ -22,9 +22,32 @@
     <!-- Required CSS Files -->
     <link href="css/style.css" rel="stylesheet">
 
+		<script type="text/javascript">
+							function checkbox()
+							{
+								var checkboxes = document.getElementsByName('day');
+								var selected = [];
+								var flag = 0;
+								for (var i=0; i<checkboxes.length; i++) {
+									if (checkboxes[i].checked) {
+										selected.push(checkboxes[i].value);
+										flag++;
+									}
+								}
+								if (flag == 0){
+									document.getElementById('checkbox-errors').innerHTML = "errors!";
+								}
+								else {
+									document.getElementById('checkbox-errors').innerHTML = "";
+								}
+								
+							}
+							function cancel(){
+								location.href="admin_welcomepage.php";}
+        </script>
 </head>
 
-<form method="post" action="php/admin_user_functions.php" >
+<form data-toggle="validator" id="template-contactform" name="template-contactform" method="post" action="php/admin_user_functions.php" >
 <body>
 
 <!-- Hidden fields -->
@@ -51,49 +74,11 @@
                     </div><!--/.col-->
                 </div><!--/.row-->
             </div><!--/.container-->
-        </div><!-- /.section --><script type="text/javascript">
-                            jQuery(document).ready(function(){
-                                $("#template-contactform").validator().on('submit', function (e) {
-                                    $(this).ajaxSubmit({
-                                        target: '#contact-form-result',
-                                        success: function(response) {
-                                            $('.form-process').fadeOut();
-                                            $('#template-contactform').find('.form-control').val('');
-                                            $('#contact-form-result').php(response);
-                                            $('#contact-form-result').fadeIn();
-                                            console.log(response);
-                                        }
-                                    });
-                                    return false;
-                                })
-
-                            });
-							function checkbox()
-							{
-								var checkboxes = document.getElementsByName('day');
-								var selected = [];
-								var flag = 0;
-								for (var i=0; i<checkboxes.length; i++) {
-									if (checkboxes[i].checked) {
-										selected.push(checkboxes[i].value);
-										flag++;
-									}
-								}
-								if (flag == 0){
-									document.getElementById('checkbox-errors').innerHTML = "errors!";
-								}
-								else {
-									document.getElementById('checkbox-errors').innerHTML = "";
-								}
-								
-							}
-							function cancel(){
-								location.href="admin_welcomepage.php";}
-                        </script><section class="section big-padding active-section">
+        </div><!-- /.section -->
+			<section class="section big-padding active-section">
             <div class="container">
                 <div class="row">
                     <div class="column-whole">
-                        <form data-toggle="validator" id="template-contactform" name="template-contactform" action="admin_record.php" method="post" role="form" novalidate="true">
 
                             <div class="form-process"></div>
 
@@ -178,8 +163,6 @@
                             </div>
 							<!--action for cancelling the changes made-->
 							
-                        </form><!--/.form-->
-                        
                     </div><!-- /.col -->
                 </div><!-- /.row -->
             </div><!-- /.container -->
@@ -188,11 +171,10 @@
                 <div class="row">
                     <div class="column-one-half">
                         <ul class="list-inline">
-                            <li><a href="#" title="" class="strong-text">About</a></li>
-                            <li><a href="#" title="" class="strong-text">Overview</a></li>
-                            <li><a href="#" title="" class="strong-text">Help</a></li>
-                            <li><a href="#" title="" class="strong-text">Terms</a></li>
-                            <li><a href="#" title="" class="strong-text">Contact Us</a></li>
+                            <li><a href="footer_details.php" target="_blank" class="strong-text">About Us</a></li>
+                            <li><a href="footer_details.php" target="_blank" class="strong-text">Overview</a></li>
+                            <li><a href="footer_details.php" target="_blank" class="strong-text">Contact Us</a></li>
+							<li><a href="footer_details.php" target="_blank" class="strong-text">Help</a></li>
                         </ul>
                     </div><!-- /.col -->
                     <div class="column-one-half text-right">

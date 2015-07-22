@@ -22,7 +22,6 @@
 
     <!-- Required CSS Files -->
 	<link href="css/style.css" rel="stylesheet">
-	<link href="css/login.css" rel="stylesheet">
 
 	 <!-- Login js -->    
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
@@ -47,10 +46,6 @@
 				<div class="column-three-fourth menu-col text-right">
 					<div class="menu">
 						<ul class="list-inline">
-							<li><a href="patient_welcome.php">Patient</a></li>
-							<li><a href="doctor_welcome.php">Doctor</a></li>
-							<!--this will be removed, work around only-->
-							<li><a href="admin_welcomepage.php">Admin</a></li>
 							<li><a href="login.php">Login</a></li>
 						</ul>
 					</div>
@@ -74,22 +69,75 @@
                         <div class="element">
                             <p class="welcome-text">A friendly application for doctors and patients. Patient can view and set an appointment
 									with their doctors. Doctors can access their patient records.</p>
-                            <p><a class="btn btn-pink login-window" role="button">Login</a>
-                            </p>
+                            <p><a href="login.php" class="btn btn-pink" role="button">Login</a></p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </section><!-- /.section --><section class="section active-section">
+            <div class="container">
+                <div class="row">
+                    <div class="column-two-third offset-one-sixth text-center">
+                        <h1>Generic Registration System</h1>
+                        <p class="lead">A way to automate your registration process </p>
+                        <div class="space hidden-sm hidden-xs"></div>
+                    </div><!-- /.col -->
+                    <div class="column-one-third">
+                        <div class="service-block">
+                            <i class="medium-icon ti-time"></i>
+                            <h4 class="lighter">Save Your Time</h4>
+                            <p>Stop the hassle of dealing with many paper works and have your records stored electronically.</p>
+                            <div class="space hidden-sm hidden-xs"></div>
+                        </div>
+                    </div><!-- /.col -->
+                    <div class="column-one-third">
+                        <div class="service-block">
+                            <i class="medium-icon ti-mobile"></i>
+                            <h4 class="lighter">Flexibility of the System</h4>
+                            <p>Customize the registration system based on your process which will suite your needs.</p>
+                            <div class="space hidden-sm hidden-xs"></div>
+                        </div>
+                    </div><!-- /.col -->
+                    <div class="column-one-third">
+                        <div class="service-block">
+                            <i class="medium-icon ti-lock"></i>
+                            <h4 class="lighter">Security of Data</h4>
+                            <p>A dedicated server and database is provided for each client to keep them secured.</p>
+                            <div class="space hidden-sm hidden-xs"></div>
+                        </div>
+                    </div><!-- /.col -->
+                    <div class="column-one-third">
+                        <div class="service-block">
+                            <i class="medium-icon ti-face-smile"></i>
+                            <h4 class="lighter">User Friendly</h4>
+                            <p>Less is more. Simple interface that all ages can easily follow and understand.</p>
+                        </div>
+                    </div><!-- /.col -->
+                    <div class="column-one-third">
+                        <div class="service-block">
+                            <i class="medium-icon ti-mouse-alt"></i>
+                            <h4 class="lighter">Easy to Maintain</h4>
+                            <p>Add, edit, delete and search records in just a few simple steps.</p>
+                        </div>
+                    </div><!-- /.col -->
+                    <div class="column-one-third">
+                        <div class="service-block">
+                            <i class="medium-icon ti-server"></i>
+                            <h4 class="lighter">Light Weight Application</h4>
+                            <p>Utilizing the cloud storage technology, there is no need to have them all in your local storage.</p>
+                        </div>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.section --><section class="section footer">
             <div class="container">
                 <div class="row">
                     <div class="column-one-half">
                         <ul class="list-inline">
-                            <li><a href="#" title="" class="strong-text">About</a></li>
-                            <li><a href="#" title="" class="strong-text">Overview</a></li>
-                            <li><a href="#" title="" class="strong-text">Help</a></li>
-                            <li><a href="#" title="" class="strong-text">Terms</a></li>
-                            <li><a href="#" title="" class="strong-text">Contact Us</a></li>
+                            <li><a href="footer_details.php" target="_blank" class="strong-text">About Us</a></li>
+                            <li><a href="footer_details.php" target="_blank" class="strong-text">Overview</a></li>
+                            <li><a href="footer_details.php" target="_blank" class="strong-text">Contact Us</a></li>
+							<li><a href="footer_details.php" target="_blank" class="strong-text">Help</a></li>
                         </ul>
                     </div><!-- /.col -->
                     <div class="column-one-half text-right">
@@ -104,7 +152,6 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/jquery.form.min.js"></script>
     <script src="js/scripts.js"></script>
-	<div id="grs-overlay-login" class="grs-hidden"></div>
 
 </body>
 </form>

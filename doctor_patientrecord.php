@@ -22,25 +22,7 @@
     <!-- Required CSS Files -->
     <link href="css/style.css" rel="stylesheet">
 
-</head>
-
-<body>
-    <!-- Defining the page layout -->
-    <div class="page-layout">
-    <div class="header page-title background-header">
-            <div class="background-image" style="background-image: url(images/admin_header.jpg)"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="column-whole">
-                        <h1>Patient Details</h1>
-                        <p>Provide findings and prescription for your patient</p>
-                        <ol class="option-menu">
-                            <li><a href="doctor_welcome.php">Home</a>
-                        </ol>
-                    </div><!--/.col-->
-                </div><!--/.row-->
-            </div><!--/.container-->
-        </div><!-- /.section --><script type="text/javascript">
+		<script type="text/javascript">
                             jQuery(document).ready(function(){
                                 $("#template-contactform").validator().on('submit', function (e) {
                                     $(this).ajaxSubmit({
@@ -58,71 +40,94 @@
 
                             });
 
-                        </script><section class="section big-padding active-section">
+                        </script>
+</head>
+
+<form data-toggle="validator" id="template-contactform" name="template-contactform" action="php\patient_record_insert_functions.php" method="post" role="form" novalidate="true">
+<body>
+
+	<input type="hidden" id="doctor_number" name="doctor_number" value="<?php echo $_GET["doctor_number"]; ?>">
+	<input type="hidden" id="customer_oid" name="customer_oid" value="<?php echo $_GET["customer_oid"]; ?>">
+    <!-- Defining the page layout -->
+    <div class="page-layout">
+    <div class="header page-title background-header">
+            <div class="background-image" style="background-image: url(images/admin_header.jpg)"></div>
             <div class="container">
                 <div class="row">
                     <div class="column-whole">
-                        <form data-toggle="validator" id="template-contactform" name="template-contactform" action="doctor_welcome.php" method="post" role="form" novalidate="true">
+                        <h1>Patient Details</h1>
+                        <p>Provide findings and prescription for your patient</p>
+                        <ol class="option-menu">
+                            <li><a href="doctor_welcome.php?doctor_number=<?php echo $_GET["doctor_number"]; ?>">Home</a>
+                        </ol>
+                    </div><!--/.col-->
+                </div><!--/.row-->
+            </div><!--/.container-->
+        </div><!-- /.section -->
+			<section class="section big-padding active-section">
+            <div class="container">
+                <div class="row">
+                    <div class="column-whole">
 
                             <div class="form-process"></div>
 
                             <div class="column-one-third form-group">
                                 <label>First Name <small>*</small></label>
-                                <input type="text" id="fname" class="form-control" required="">
+                                <input type="text" id="fname" value="<?php echo $_GET["first_name"]; ?>" class="form-control" required="">
                                 <div class="help-block with-errors"></div>
                             </div>
 
                             <div class="column-one-third form-group">
                                 <label>Last Name <small>*</small></label>
-                                <input type="text" id="lname" value="" class="form-control" required="">
+                                <input type="text" id="lname" value="<?php echo $_GET["last_name"]; ?>" class="form-control" required="">
                                 <div class="help-block with-errors"></div>
                             </div>
 
                             <div class="column-one-third form-group">
                                 <label>Middle Name</label>
-                                <input type="text" id="mi" value="" class="form-control">
+                                <input type="text" id="mi" value="<?php echo $_GET["middle_name"]; ?>" class="form-control">
                                 <div class="help-block with-errors"></div>
                             </div>
 
                             <div class="column-two-third form-group">
                                 <label>Home Address</label>
-                                <input type="text" id="address" class="form-control">
+                                <input type="text" id="address" value="<?php echo $_GET["address"]; ?>" class="form-control">
                                 <div class="help-block with-errors"></div>
                             </div>
 							
 							<div class="column-one-third form-group">
                                 <label>Gender</label>
-                                <input type="text" id="gender" class="form-control">
+                                <input type="text" id="gender" value="<?php echo $_GET["gender"]; ?>" class="form-control">
                                 <div class="help-block with-errors"></div>
                             </div>
 							
 							 <div class="column-one-third form-group">
                                 <label>Date of Birth</label>
-                                <input type="date" id="bdate" class="form-control">
+                                <input type="date" id="bdate" value="<?php echo $_GET["birthdate"]; ?>" class="form-control">
                                 <div class="help-block with-errors"></div>
                             </div>
 
                             <div class="column-one-third form-group">
                                 <label>Phone No.</label>
-                                <input type="text" id="phone" class="form-control">
+                                <input type="text" id="phone" value="<?php echo $_GET["mobile_number"]; ?>" class="form-control">
                                 <div class="help-block with-errors"></div>
                             </div>
 
                             <div class="column-one-third form-group">
                                 <label>NHI </label><small>*</small>
-                                <input type="text" id="nhi" class="form-control" required="">
+                                <input type="text" id="nhi" value="<?php echo $_GET["nhi"]; ?>" class="form-control" required="">
                                 <div class="help-block with-errors"></div>
                             </div>
 
                             <div class="column-whole form-group">
                                 <label>Diagnosis <small>*</small></label>
-                                <textarea class="form-control" id="diagnosis" rows="4" cols="30" required=""></textarea>
+                                <textarea class="form-control" id="diagnosis" name="diagnosis" rows="4" cols="30" required=""></textarea>
                                 <div class="help-block with-errors"></div>
                             </div>
 							
 							<div class="column-whole form-group">
                                 <label>Prescription <small>*</small></label>
-                                <textarea class="form-control" id="diagnosis" rows="4" cols="30" required=""></textarea>
+                                <textarea class="form-control" id="prescription" name="prescription" rows="4" cols="30" required=""></textarea>
                                 <div class="help-block with-errors"></div>
                             </div>
 							
@@ -133,12 +138,46 @@
 									<col width="900">
 									<tr>
 										<th>Consultation Date</th>
-										<th>Diagnosis Details</th>
+										<th>Diagnosis and Prescription Details</th>
 									</tr>
-									<tr>
-										<td>20/05/2015</td>
-										<td>Acute bronchitis</td>
-									</tr>
+									
+									<!-- start of PHP code -->
+									
+									<?php
+									include("php\db_connection.php");
+									$conn = getConnection();
+									
+									$doctor_number = $_GET["doctor_number"]; 
+									$customer_oid = $_GET["customer_oid"]; 
+									
+									$query = "select user_oid, customer_oid, details, prescription, date_created from tbpracticecustomerdetails where user_oid = '$doctor_number' and customer_oid = '$customer_oid' order by date_created desc";
+									$result = mysqli_query($conn, $query);
+									
+									if (!$result) die ("Close DB connection!");
+									//If no data for the specified specialty
+									if ($result->num_rows == 0){
+										echo "<tr>";
+											echo "<td>None</td>";
+											echo "<td>None</td>";
+										echo "</tr>";
+									} 
+									else {
+										//If there are records for the specified specialty
+										while($row = mysqli_fetch_assoc($result)){
+										
+											$details = $row['details'];
+											$prescription = $row['prescription'];
+											$date_created = $row['date_created'];
+											echo "<tr>";
+												echo "<td>$date_created</td>";
+												echo "<td>Diagnosis : $details<br/>Prescription : $prescription</td>";
+											echo "</tr>";
+										}	
+									}	
+									?>
+									
+									<!-- end of PHP code -->
+									
 								</table>	
 							</div><!--/.col-->
 							
@@ -157,9 +196,8 @@
 							<!--action for cancelling the changes made-->
 							<script type="text/javascript">
 								document.getElementById("cancel-patient-record").onclick=function(){
-								location.href="doctor_welcome.php";};
+								location.href="doctor_welcome.php?doctor_number=<?php echo $_GET["doctor_number"]; ?>";};
 							</script>
-                        </form><!--/.form-->
                         
                     </div><!-- /.col -->
                 </div><!-- /.row -->
@@ -188,4 +226,6 @@
 
 
 
-</body></html>
+</body>
+</form><!--/.form-->
+</html>

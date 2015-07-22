@@ -24,7 +24,7 @@
 			header( "Location: http://localhost/genericregistrationsystem/admin_welcomepage.php" );
 		}
 		else if ($role == 2){
-			header( "Location: http://localhost/genericregistrationsystem/doctor_welcome.php" );
+			header( "Location: http://localhost/genericregistrationsystem/doctor_selectspecialty.php" );
 		} 
 		else if ($role == 3){
 			header( "Location: http://localhost/genericregistrationsystem/patient_welcome.php" );
@@ -38,5 +38,4 @@
 	}	
 
 	closeConnection($conn);
-	//mysqli_close($conn);
 ?>

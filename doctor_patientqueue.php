@@ -24,6 +24,8 @@
     
 </head>
 
+<form method="post" >
+
 <body>
     <!-- Defining the page layout -->
     <div class="page-layout">
@@ -35,7 +37,7 @@
                         <h1>Patient in Queue</h1>
                         <p>List of patient in queue for consultation today</p>
                         <ol class="option-menu">
-                            <li><a href="doctor_welcome.php">Back to Home</a></li>
+                            <li><a href="doctor_welcome.php?&doctor_number=<?php echo $_GET["doctor_number"]; ?>">Back to Home</a></li>
                         </ol>
                     </div><!--/.col-->
                 </div><!--/.row-->
@@ -54,36 +56,54 @@
 						<th>Select Patient</th>
 						<th>Remove Patient</th>
 					</tr>
-					<tr>
-						<td>B001</td>
-						<td>Rhiza Roque</td>
-						<td><a href="doctor_patientrecord.php">Select</a></td>
-						<td>Remove</td>
-					</tr>
-					<tr>
-						<td>B003</td>
-						<td>Luna Lovegood</td>
-						<td><a href="doctor_patientrecord.php">Select</a></td>
-						<td>Remove</td>
-					</tr>
-					<tr>
-						<td>B008</td>
-						<td>Horace Slughorn</td>
-						<td><a href="doctor_patientrecord.php">Select</a></td>
-						<td>Remove</td>
-					</tr>
-					<tr>
-						<td>B011</td>
-						<td>Minerva McGonagal</td>
-						<td><a href="doctor_patientrecord.php">Select</a></td>
-						<td>Remove</td>
-					</tr>
-					<tr>
-						<td>B017</td>
-						<td>Parvati Patil</td>
-						<td><a href="doctor_patientrecord.php">Select</a></td>
-						<td>Remove</td>
-					</tr>
+					<!-- PHP code here -->
+					
+					<?php 
+					
+								include("php\db_connection.php");
+								$conn = getConnection();
+								
+								$doctor_number = $_GET["doctor_number"]; 
+								
+								$query = "select user_oid, customer_oid, schedule from tbpracticeschedule where user_oid = '$doctor_number' and served = '0' order by schedule asc";
+								$result = mysqli_query($conn, $query);
+								
+								if (!$result) die ("Close DB connection!");
+					
+								//If no data for the specified specialty
+								if ($result->num_rows == 0){
+									echo "<tr>";
+										echo "<td> </td>";
+										echo "<td> </td>";
+										echo "<td> </td>";
+										echo "<td>Remove</td>";
+									echo "</tr>";
+								}
+								else { //If there are records for the specified specialty
+									while($row = mysqli_fetch_array($result)){
+									
+										$customer_oid = $row[1];
+										$schedule = $row[2];
+										
+										$query2 = "select oid, first_name, last_name from tbcustomerdetails where oid = '$customer_oid'";
+										$result2 = mysqli_query($conn, $query2);
+										if (!$result2) die ("Close DB connection!");
+										while($row2 = mysqli_fetch_array($result2)){
+
+										$last_name = $row2[1];
+										$first_name = $row2[2];
+											echo "<tr>";
+												echo "<td>00$schedule</td>";
+												echo "<td>$last_name $first_name</td>";
+												echo "<td><a href='php\doctor_patientrecord_functions.php?doctor_number=$doctor_number&customer_oid=$customer_oid'>Select</a></td>";
+												echo "<td>Remove</td>";
+											echo "</tr>";
+										}
+									}
+								}
+					?>
+					
+					<!-- end of PHP code here -->
 					
 				</table><!--/.patient-->
             </div><!--/.container-->
@@ -109,4 +129,6 @@
 
 
 
-</body></html>
+</body>
+</form>
+</html>

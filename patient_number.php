@@ -32,7 +32,7 @@
                 <div class="row">
                     <div class="column-one-half offset-one-fourth text-center">
                         <i class="large-icon ti-direction-alt"></i>
-                        <h1 class="lighter">Patient Queue Number: B012</h1>
+                        <h1 class="lighter">Patient Queue Number: 00<?php echo $_GET["patient_queue"]; ?></h1>
                         <p class="lead large-lead">
                             Dr Yeng, Cristina <br />
 							Cardiologist <br />

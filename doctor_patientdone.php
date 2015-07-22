@@ -54,36 +54,65 @@
 						<th>Diagnosis</th>
 						<th>Update Details</th>
 					</tr>
-					<tr>
-						<td>B001</td>
-						<td>Rhiza Roque</td>
-						<td>Low RBC count</td>
-						<td><a href="doctor_patientrecord.php">Edit</a></td>
-					</tr>
-					<tr>
-						<td>B003</td>
-						<td>Luna Lovegood</td>
-						<td>Low RBC count</td>
-						<td><a href="doctor_patientrecord.php">Edit</a></td>
-					</tr>
-					<tr>
-						<td>B008</td>
-						<td>Horace Slughorn</td>
-						<td>Low RBC count</td>
-						<td><a href="doctor_patientrecord.php">Edit</a></td>
-					</tr>
-					<tr>
-						<td>B011</td>
-						<td>Minerva McGonagal</td>
-						<td>Low RBC count</td>
-						<td><a href="doctor_patientrecord.php">Edit</a></td>
-					</tr>
-					<tr>
-						<td>B017</td>
-						<td>Parvati Patil</td>
-						<td>Low RBC count</td>
-						<td><a href="doctor_patientrecord.php">Edit</a></td>
-					</tr>
+					
+					<!-- PHP code here -->
+					
+					<?php 
+					
+								include("php\db_connection.php");
+								$conn = getConnection();
+								
+								$doctor_number = $_GET["doctor_number"]; 
+								
+								$query = "select user_oid, customer_oid, schedule from tbpracticeschedule where user_oid = '$doctor_number' and served = '1' order by schedule asc";
+								$result = mysqli_query($conn, $query);
+								
+								if (!$result) die ("Close DB connection!");
+					
+								//If no data for the specified specialty
+								if ($result->num_rows == 0){
+									echo "<tr>";
+										echo "<td> </td>";
+										echo "<td> </td>";
+										echo "<td> </td>";
+										echo "<td>Remove</td>";
+									echo "</tr>";
+								}
+								else { //If there are records for the specified specialty
+									while($row = mysqli_fetch_array($result)){
+									
+										$customer_oid = $row[1];
+										$schedule = $row[2];
+										
+										$query2 = "select oid, first_name, last_name from tbcustomerdetails where oid = '$customer_oid'";
+										$result2 = mysqli_query($conn, $query2);
+										if (!$result2) die ("Close DB connection!");
+										while($row2 = mysqli_fetch_array($result2)){
+
+										$last_name = $row2[1];
+										$first_name = $row2[2];
+										
+										$query3 = "select oid, details from tbpracticecustomerdetails where user_oid = '$doctor_number' and customer_oid = '$customer_oid'";
+										$result3 = mysqli_query($conn, $query3);
+										if (!$result3) die ("Close DB connection!");
+											while($row3 = mysqli_fetch_array($result3)){
+											$diagnosis = $row3[1];
+
+												echo "<tr>";
+													echo "<td>00$schedule</td>";
+													echo "<td>$last_name $first_name</td>";
+													echo "<td>$diagnosis</td>";
+													echo "<td><a href='php\doctor_patientrecord_functions.php?doctor_number=$doctor_number&customer_oid=$customer_oid'>Edit</a></td>";
+												echo "</tr>";
+											}
+										}
+									}
+								}
+								
+							closeConnection($conn);	
+					?>
+					
+					<!-- end of PHP code here -->
 					
 				</table><!--/.patient-->
             </div><!--/.container-->
