@@ -28,7 +28,8 @@
     <!-- Defining the page layout -->
     <div class="page-layout">
     <div class="header page-title background-header">
-            <div class="background-image" style="background-image:url(images/admin_header.jpg)";></div>
+		<input type="hidden" id="search_user" name="search_user" value=""/>
+		<div class="background-image" style="background-image:url(images/admin_header.jpg)";></div>
             <div class="container">
                 <div class="row">
                     <div class="column-whole">
@@ -38,7 +39,7 @@
 							<li class="selected">Home</li>
                             <li><a href="admin_user.php">User</a></li>
                             <li><a href="admin_record.php">Doctor</a></li>
-                            <li><a href="admin_directory.php">Directory</a></li>
+                            <li><a href="admin_directory.php?search=start">Directory</a></li>
 							<li><a href="admin_orgsettings.php">Settings</a></li>
 							<li><a href="index.php">Logout</a></li>
                         </ol>
@@ -46,6 +47,7 @@
                 </div><!--/.row-->
             </div><!--/.container-->
         </div><!-- /.section --><section class="section big-padding active-section">
+
             <div class="container">
                 <div class="row">
                     <div class="column-one-fourth">

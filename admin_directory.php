@@ -24,6 +24,7 @@
     
 </head>
 
+<form method="post" action="admin_directory.php">
 <body>
     <!-- Defining the page layout -->
     <div class="page-layout">
@@ -50,244 +51,82 @@
             <div class="container">	
 				<div class="search">
 					<label>Search by Name or Role</label>
-					<input type="text" id="search-user" name="search-user">
+					<input type="text" id="search_user" name="search_user">
+                    <button class="btn btn-save-cancel btn-small" type="submit" id="submit-patient-record" value="submit" style="pointer-events: all; cursor: pointer;">Search</button>
 				</div>
                 <div class="row">
                     <div class="column-whole">
                         <div class="content">
                             <div class="row">
-                                <div class="column-one-third space-one-fourth">
-                                    <div class="details">
-                                        <div class="details-header">
-                                            <h3 class="details-name">Rhiza Roque</h3>
-                                            <ul class="details-header-desc list-inline ">
-                                                <li>Last Update:</li>
-                                                <li>Apr 1, 2014</li>
-                                            </ul>
-											<ul class="details-header-desc list-inline ">
-                                                <li>Role/Access:</li>
-                                                <li>Site Admin</li>
-                                            </ul>
-                                        </div><!--/.entry-top-->
-                                        <div class="details-link">
-                                            <ul class="list-inline">
-                                                <li><a href="#" title=""> Edit</a></li>
-                                                <li class="right-align"><a href="#" title="">Delete</a></li>
-                                            </ul><!--/.entry-meta-->
-                                        </div><!--/.entry-bottom-->
-                                    </div><!--/.entry-->
-                                </div><!--/.col-->
-
-                                <div class="column-one-third space-one-fourth">
-                                    <div class="details">
-                                        <div class="details-header">
-                                            <h3 class="details-name">Neville Longbottom</h3>
-                                            <ul class="details-header-desc list-inline ">
-                                                <li>Last Update:</li>
-                                                <li>Sep 10, 2013</li>
-                                            </ul>
-											<ul class="details-header-desc list-inline ">
-                                                <li>Role/Access:</li>
-                                                <li>Doctor Account</li>
-                                            </ul>
-                                        </div><!--/.entry-top-->
-                                        <div class="details-link">
-                                            <ul class="list-inline">
-                                                <li><a href="#" title=""> Edit</a></li>
-                                                <li class="right-align"><a href="#" title="">Delete</a></li>
-                                            </ul><!--/.entry-meta-->
-                                        </div><!--/.entry-bottom-->
-                                    </div><!--/.entry-->
-                                </div><!--/.col-->
-								
-								<div class="column-one-third space-one-fourth">
-                                    <div class="details">
-                                        <div class="details-header">
-                                            <h3 class="details-name">Callie Torres</h3>
-                                            <ul class="details-header-desc list-inline ">
-                                                <li>Last Update:</li>
-                                                <li>Jan 15, 2014</li>
-                                            </ul>
-											<ul class="details-header-desc list-inline ">
-                                                <li>Role/Access:</li>
-                                                <li>Doctor Account</li>
-                                            </ul>
-                                        </div><!--/.entry-top-->
-                                        <div class="details-link">
-                                            <ul class="list-inline">
-                                                <li><a href="#" title=""> Edit</a></li>
-                                                <li class="right-align"><a href="#" title="">Delete</a></li>
-                                            </ul><!--/.entry-meta-->
-                                        </div><!--/.entry-bottom-->
-                                    </div><!--/.entry-->
-                                </div><!--/.col-->
-								
-								<div class="column-one-third space-one-fourth">
-                                    <div class="details">
-                                        <div class="details-header">
-                                            <h3 class="details-name">Carla Joy Castel</h3>
-                                            <ul class="details-header-desc list-inline ">
-                                                <li>Last Update:</li>
-                                                <li>Dec 18, 2013</li>
-                                            </ul>
-											<ul class="details-header-desc list-inline ">
-                                                <li>Role/Access:</li>
-                                                <li>Pateint Access</li>
-                                            </ul>
-                                        </div><!--/.entry-top-->
-                                        <div class="details-link">
-                                            <ul class="list-inline">
-                                                <li><a href="#" title=""> Edit</a></li>
-                                                <li class="right-align"><a href="#" title="">Delete</a></li>
-                                            </ul><!--/.entry-meta-->
-                                        </div><!--/.entry-bottom-->
-                                    </div><!--/.entry-->
-                                </div><!--/.col-->
-								
-								<div class="column-one-third space-one-fourth">
-                                    <div class="details">
-                                        <div class="details-header">
-                                            <h3 class="details-name">Alan Dimaano</h3>
-                                            <ul class="details-header-desc list-inline ">
-                                                <li>Last Update:</li>
-                                                <li>May 3, 2015</li>
-                                            </ul>
-											<ul class="details-header-desc list-inline ">
-                                                <li>Role/Access:</li>
-                                                <li>Doctor Account</li>
-                                            </ul>
-                                        </div><!--/.entry-top-->
-                                        <div class="details-link">
-                                            <ul class="list-inline">
-                                                <li><a href="#" title=""> Edit</a></li>
-                                                <li class="right-align"><a href="#" title="">Delete</a></li>
-                                            </ul><!--/.entry-meta-->
-                                        </div><!--/.entry-bottom-->
-                                    </div><!--/.entry-->
-                                </div><!--/.col-->
-								
-								<div class="column-one-third space-one-fourth">
-                                    <div class="details">
-                                        <div class="details-header">
-                                            <h3 class="details-name">Arizona Robins</h3>
-                                            <ul class="details-header-desc list-inline ">
-                                                <li>Last Update:</li>
-                                                <li>Jul 10, 2015</li>
-                                            </ul>
-											<ul class="details-header-desc list-inline ">
-                                                <li>Role/Access:</li>
-                                                <li>Doctor Account</li>
-                                            </ul>
-                                        </div><!--/.entry-top-->
-                                        <div class="details-link">
-                                            <ul class="list-inline">
-                                                <li><a href="#" title=""> Edit</a></li>
-                                                <li class="right-align"><a href="#" title="">Delete</a></li>
-                                            </ul><!--/.entry-meta-->
-                                        </div><!--/.entry-bottom-->
-                                    </div><!--/.entry-->
-                                </div><!--/.col-->
-								
-								<div class="column-one-third space-one-fourth">
-                                    <div class="details">
-                                        <div class="details-header">
-                                            <h3 class="details-name">Ludo Bagman</h3>
-                                            <ul class="details-header-desc list-inline ">
-                                                <li>Last Update:</li>
-                                                <li>Oct 13, 2014</li>
-                                            </ul>
-											<ul class="details-header-desc list-inline ">
-                                                <li>Role/Access:</li>
-                                                <li>Doctor Account</li>
-                                            </ul>
-                                        </div><!--/.entry-top-->
-                                        <div class="details-link">
-                                            <ul class="list-inline">
-                                                <li><a href="#" title=""> Edit</a></li>
-                                                <li class="right-align"><a href="#" title="">Delete</a></li>
-                                            </ul><!--/.entry-meta-->
-                                        </div><!--/.entry-bottom-->
-                                    </div><!--/.entry-->
-                                </div><!--/.col-->
-								
-								<div class="column-one-third space-one-fourth">
-                                    <div class="details">
-                                        <div class="details-header">
-                                            <h3 class="details-name">Rhiza Roque</h3>
-                                            <ul class="details-header-desc list-inline ">
-                                                <li>Last Update:</li>
-                                                <li>Apr 1, 2014</li>
-                                            </ul>
-											<ul class="details-header-desc list-inline ">
-                                                <li>Role/Access:</li>
-                                                <li>Site Admin</li>
-                                            </ul>
-                                        </div><!--/.entry-top-->
-                                        <div class="details-link">
-                                            <ul class="list-inline">
-                                                <li><a href="#" title=""> Edit</a></li>
-                                                <li class="right-align"><a href="#" title="">Delete</a></li>
-                                            </ul><!--/.entry-meta-->
-                                        </div><!--/.entry-bottom-->
-                                    </div><!--/.entry-->
-                                </div><!--/.col-->
-								
-								<div class="column-one-third space-one-fourth">
-                                    <div class="details">
-                                        <div class="details-header">
-                                            <h3 class="details-name">Molly Weasley</h3>
-                                            <ul class="details-header-desc list-inline ">
-                                                <li>Last Update:</li>
-                                                <li>Feb 9, 2015</li>
-                                            </ul>
-											<ul class="details-header-desc list-inline ">
-                                                <li>Role/Access:</li>
-                                                <li>Site Admin</li>
-                                            </ul>
-                                        </div><!--/.entry-top-->
-                                        <div class="details-link">
-                                            <ul class="list-inline">
-                                                <li><a href="#" title=""> Edit</a></li>
-                                                <li class="right-align"><a href="#" title="">Delete</a></li>
-                                            </ul><!--/.entry-meta-->
-                                        </div><!--/.entry-bottom-->
-                                    </div><!--/.entry-->
-                                </div><!--/.col-->
-								
-								<div class="column-one-third space-one-fourth">
-                                    <div class="details">
-                                        <div class="details-header">
-                                            <h3 class="details-name">Rhiza Roque</h3>
-                                            <ul class="details-header-desc list-inline ">
-                                                <li>Last Update:</li>
-                                                <li>Apr 1, 2014</li>
-                                            </ul>
-											<ul class="details-header-desc list-inline ">
-                                                <li>Role/Access:</li>
-                                                <li>Site Admin</li>
-                                            </ul>
-                                        </div><!--/.entry-top-->
-                                        <div class="details-link">
-                                            <ul class="list-inline">
-                                                <li><a href="#" title=""> Edit</a></li>
-                                                <li class="right-align"><a href="#" title="">Delete</a></li>
-                                            </ul><!--/.entry-meta-->
-                                        </div><!--/.entry-bottom-->
-                                    </div><!--/.entry-->
-                                </div><!--/.col-->
-							</div><!--/.row-->
-
-                            <nav class="text-center">
-                                <ul class="pagination">
-                                    <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
-                                    <li class="active"><a href="#">1</a></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li><a href="#">4</a></li>
-                                    <li><a href="#">5</a></li>
-                                    <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
-                                </ul>
-                            </nav>
+							
+											<!-- start PHP code here -->
+											<?php
+											
+												include("php\db_connection.php");
+												$conn = getConnection();
+												
+												if(isset($_POST['search_user'])){
+													$search_user = $_POST['search_user'];
+													$query = "select * from tbuser where email like '%$search_user%' or user_id like '%$search_user%' or last_name like '%$search_user%' or first_name like '%$search_user%'";
+												}
+												else {
+													$query = "select * from tbuser";
+												}
+												
+												$result = mysqli_query($conn, $query);
+												if (!$result) die ("Close DB connection!");
+												//If no data for the specified specialty
+												if ($result->num_rows == 0){
+											
+												}
+												else {
+													while($row = mysqli_fetch_assoc($result)){
+													
+													$user_oid = $row['oid'];
+													$last_name = $row['last_name'];
+													$first_name = $row['first_name'];
+													$date_updated = $row['date_updated'];
+													$role = $row['role'];
+													
+													if ($role == '1'){
+														$role = 'Site Admin';
+													}
+													else if ($role == '2'){
+														$role = 'Doctor Account';
+													}
+													else if ($role == '3'){
+														$role = 'Patient Access';
+													}	
+													
+													echo "<div class='column-one-third space-one-fourth'>";
+														echo "<div class='details'>";
+															echo "<div class='details-header'>";
+														echo "<h3 class='details-name'>$first_name $last_name</h3>";
+														echo "<ul class='details-header-desc list-inline '>";
+															echo "<li>Last Update:</li>";
+															echo "<li>$date_updated</li>";
+														echo "</ul>";
+														echo "<ul class='details-header-desc list-inline '>";
+															echo "<li>Role/Access:</li>";
+															echo "<li>$role</li>";
+														echo "</ul>";
+													echo "</div>";
+													echo "<div class='details-link'>";
+														echo "<ul class='list-inline'>";
+															echo "<li><a href='#' title=''> Edit</a></li>";
+															echo "<li class='right-align'><a href='#' title=''>Delete</a></li>";
+																echo "</ul>";
+															echo "</div>";
+														echo "</div>";
+													echo "</div>";
+														
+													}	
+												}
+												closeConnection($conn);	
+												
+											?>
+							<!-- end PHP code here -->
+							
                         </div><!--/.content-->
                     </div><!--/.col-->
                 </div><!--/.row-->
@@ -318,4 +157,6 @@
 
 
 
-</body></html>
+</body>
+</form>
+</html>
