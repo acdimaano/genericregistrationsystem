@@ -1,11 +1,17 @@
 <?php
+
+	//This file is for doctor and patient record
+	//For doctor and patient relationship
 	include("db_connection.php");
+	include("constants.php");
+	//Global variable for tables and web url
+	global $tbcustomerdetails, $weburl;
 	$conn = getConnection();
-	
+	//Doctor and patient variables
 	$doctor_number = $_GET["doctor_number"]; 
 	$customer_oid  = $_GET["customer_oid"];
 
-	$query = "select * from tbcustomerdetails where oid = '$customer_oid'";
+	$query = "select * from $tbcustomerdetails where oid = '$customer_oid'";
 	$result = mysqli_query($conn, $query);
 	
 	if (!$result) die ("Close DB connection!");
@@ -32,7 +38,7 @@
 	}	
 	
 	
-	header( "Location: http://localhost/genericregistrationsystem/doctor_patientrecord.php?customer_oid=$customer_oid&first_name=$first_name&last_name=$last_name&middle_name=$middle_name&address=$address&mobile_number=$mobile_number&birthdate=$birthdate&gender=$gender&nhi=$nhi&doctor_number=$doctor_number" );
+	header( "Location: ".$weburl."doctor_patientrecord.php?customer_oid=$customer_oid&first_name=$first_name&last_name=$last_name&middle_name=$middle_name&address=$address&mobile_number=$mobile_number&birthdate=$birthdate&gender=$gender&nhi=$nhi&doctor_number=$doctor_number" );
 
 	closeConnection($conn);
 ?>

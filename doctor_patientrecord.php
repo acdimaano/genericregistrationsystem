@@ -145,12 +145,14 @@
 									
 									<?php
 									include("php\db_connection.php");
+									include("php\constants.php");
+									global $tbpracticecustomerdetails;
 									$conn = getConnection();
 									
 									$doctor_number = $_GET["doctor_number"]; 
 									$customer_oid = $_GET["customer_oid"]; 
 									
-									$query = "select user_oid, customer_oid, details, prescription, date_created from tbpracticecustomerdetails where user_oid = '$doctor_number' and customer_oid = '$customer_oid' order by date_created desc";
+									$query = "select user_oid, customer_oid, details, prescription, date_created from $tbpracticecustomerdetails where user_oid = '$doctor_number' and customer_oid = '$customer_oid' order by date_created desc";
 									$result = mysqli_query($conn, $query);
 									
 									if (!$result) die ("Close DB connection!");
@@ -206,9 +208,29 @@
             <div class="container">
                 <div class="row">
                     <div class="column-one-half">
-                        <p>Medical City<br/>
-						#820 Symond St. Auckland CBD<br/>
-						0800 634 8892</p>
+                        <?php
+					
+							//include("php\db_connection.php");
+							//include("php\constants.php");
+							$conn = getConnection();
+							global $tborganization;
+							
+							$query = "select * from $tborganization where oid = 1";
+							//echo $query;
+							$result = mysqli_query($conn, $query);
+							
+							if (!$result) die ("Close DB connection!");
+
+							$row = mysqli_fetch_assoc($result);
+							$name = $row['name'];
+							$address = $row['address'];
+							$phone = $row['phone'];
+							
+                        echo "<p>$name<br/>";
+						echo "$address<br/>";
+						echo "$phone</p>";
+						closeConnection($conn);	
+					?>
                     </div><!-- /.col -->
                     <div class="column-one-half text-right">
                         <p><br/>© 2015 - GRS Application by Alan & Rhiza</p>

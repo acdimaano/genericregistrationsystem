@@ -34,9 +34,9 @@
                         <i class="large-icon ti-direction-alt"></i>
                         <h1 class="lighter">Patient Queue Number: 00<?php echo $_GET["patient_queue"]; ?></h1>
                         <p class="lead large-lead">
-                            Dr Yeng, Cristina <br />
-							Cardiologist <br />
-							Rm. 502
+                            <?php echo $_GET["first_name"]; ?>, <?php echo $_GET["last_name"]; ?> <br />
+							<?php echo $_GET["specialty"]; ?> <br />
+							Rm. <?php echo $_GET["room_no"]; ?>
                         </p>
                         <p><a href="patient_welcome.php" title="" class="btn btn-red">Got it!!</a></p>
                     </div><!-- /.col -->
@@ -46,9 +46,29 @@
             <div class="container">
                 <div class="row">
                     <div class="column-one-half">
-                        <p>Medical City<br/>
-						#820 Symond St. Auckland CBD<br/>
-						0800 634 8892</p>
+                        <?php
+					
+							include("php\db_connection.php");
+							include("php\constants.php");
+							$conn = getConnection();
+							global $tborganization;
+							
+							$query = "select * from $tborganization where oid = 1";
+							//echo $query;
+							$result = mysqli_query($conn, $query);
+							
+							if (!$result) die ("Close DB connection!");
+
+							$row = mysqli_fetch_assoc($result);
+							$name = $row['name'];
+							$address = $row['address'];
+							$phone = $row['phone'];
+							
+                        echo "<p>$name<br/>";
+						echo "$address<br/>";
+						echo "$phone</p>";
+						closeConnection($conn);	
+					?>
                     </div><!-- /.col -->
                     <div class="column-one-half text-right">
                         <p><br/>© 2015 - GRS Application by Alan & Rhiza</p>

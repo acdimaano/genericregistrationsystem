@@ -61,11 +61,13 @@
 					<?php 
 					
 								include("php\db_connection.php");
+								include("php\constants.php");
+								global $tbpracticeschedule, $tbcustomerdetails;
 								$conn = getConnection();
 								
 								$doctor_number = $_GET["doctor_number"]; 
 								
-								$query = "select user_oid, customer_oid, schedule from tbpracticeschedule where user_oid = '$doctor_number' and served = '0' order by schedule asc";
+								$query = "select user_oid, customer_oid, schedule from $tbpracticeschedule where user_oid = '$doctor_number' and served = '0' order by schedule asc";
 								$result = mysqli_query($conn, $query);
 								
 								if (!$result) die ("Close DB connection!");
@@ -85,7 +87,7 @@
 										$customer_oid = $row[1];
 										$schedule = $row[2];
 										
-										$query2 = "select oid, first_name, last_name from tbcustomerdetails where oid = '$customer_oid'";
+										$query2 = "select oid, first_name, last_name from $tbcustomerdetails where oid = '$customer_oid'";
 										$result2 = mysqli_query($conn, $query2);
 										if (!$result2) die ("Close DB connection!");
 										while($row2 = mysqli_fetch_array($result2)){
@@ -111,9 +113,29 @@
             <div class="container">
                 <div class="row">
                     <div class="column-one-half">
-                        <p>Medical City<br/>
-						#820 Symond St. Auckland CBD<br/>
-						0800 634 8892</p>
+                        <?php
+					
+							//include("php\db_connection.php");
+							//include("php\constants.php");
+							$conn = getConnection();
+							global $tborganization;
+							
+							$query = "select * from $tborganization where oid = 1";
+							//echo $query;
+							$result = mysqli_query($conn, $query);
+							
+							if (!$result) die ("Close DB connection!");
+
+							$row = mysqli_fetch_assoc($result);
+							$name = $row['name'];
+							$address = $row['address'];
+							$phone = $row['phone'];
+							
+                        echo "<p>$name<br/>";
+						echo "$address<br/>";
+						echo "$phone</p>";
+						closeConnection($conn);	
+					?>
                     </div><!-- /.col -->
                     <div class="column-one-half text-right">
                         <p><br/>© 2015 - GRS Application by Alan & Rhiza</p>

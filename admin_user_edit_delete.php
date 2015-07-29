@@ -72,62 +72,45 @@
                             <div class="form-process"></div>
 
                             <div class="column-one-third form-group">
-                                <label>First Name <small>*</small></label>
-                                <input type="text" id="fname" name="fname" value="" class="form-control" required="">
+                                <label>First Name</label>
+                                <input type="text" id="fname" name="fname" value="<?php echo $_GET["first_name"]; ?>" class="form-control" required="" >
                                 <div class="help-block with-errors"></div>
                             </div>
 
                             <div class="column-one-third form-group">
-                                <label>Last Name <small>*</small></label>
-                                <input type="text" id="lname" name="lname" value="" class="form-control" required="">
+                                <label>Last Name</label>
+                                <input type="text" id="lname" name="lname" value="<?php echo $_GET["last_name"]; ?>" class="form-control" required="" >
                                 <div class="help-block with-errors"></div>
                             </div>
 
                             <div class="column-one-third form-group">
-                                <label>User Name <small>*</small></label>
-                                <input type="text" id="userid" name="userid" value="" class="form-control" required="">
+                                <label>User Name</label>
+                                <input type="text" id="userid" name="userid" value="<?php echo $_GET["user_id"]; ?>" class="form-control" required="" >
                                 <div class="help-block with-errors"></div>
                             </div>
 
                             <div class="column-two-third form-group">
-                                <label>Email Address <small>*</small></label>
-                                <input type="email" id="email" name="email" value="" class="email form-control" required="">
+                                <label>Email Address</label>
+                                <input type="email" id="email" name="email" value="<?php echo $_GET["email"]; ?>" class="email form-control" required="" >
                                 <div class="help-block with-errors"></div>
                             </div>
 
                             <div class="column-one-third form-group">
-                                <label>Access Type <small>*</small></label>
-                                <select id="access" name="access_type" class="form-control" required="">
-                                    <option value="">-- Select One --</option>
-                                    <option value="admin">Site Admin</option>
-                                    <option value="doctor">Doctor Account</option>
-                                    <option value="patient">Patient Access</option>
-                                </select>
-								<div class="help-block with-errors"></div>
-                            </div>
-							
-                            <div class="column-one-third form-group">
-                                <label>Password <small>*</small></label>
-                                <input type="password" id="pw" name="password" value="" class="form-control" required="">
+                                <label>Access Type</label>
+                                <input type="text" id="userid" name="userid" value="<?php echo $_GET["role"]; ?>" class="form-control" required="" >
                                 <div class="help-block with-errors"></div>
                             </div>
 							
-							<div class="column-one-third form-group">
-                                <label>Confirm Password <small>*</small></label>
-                                <input type="password" id="pw" name="confirm_password" value="" class="form-control" required="">
-                                <div class="help-block with-errors"></div>
-                            </div>
-
                             <div class="column-whole">                                
                                 <p id="contact-form-result"></p>
                                 <br>
                             </div><!--/.col-->
 
                             <div class="column-one-sixth">
-                                <button class="btn btn-save-cancel btn-small" type="submit" id="save-user-details" name="template-contactform-submit" value="submit" style="pointer-events: all; cursor: pointer;">Save Changes</button>
+                                <button class="btn btn-save-cancel btn-small" type="submit" id="save-user-details" name="template-contactform-submit" value="submit" style="pointer-events: all; cursor: pointer;">Update / Delete</button>
                             </div>
 							<div class="column-one-sixth">
-                                <button class="btn btn-save-cancel btn-small" type="submit" id="cancel-user-details" name="template-contactform-submit" value="submit" style="pointer-events: all; cursor: pointer;">Cancel Changes</button>
+                                <button class="btn btn-save-cancel btn-small" type="submit" id="cancel-user-details" name="template-contactform-submit" value="submit" style="pointer-events: all; cursor: pointer;">Cancel Update / Delete</button>
                             </div>
 							
 							<!--action for cancelling the changes made-->

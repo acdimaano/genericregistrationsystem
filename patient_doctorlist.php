@@ -52,12 +52,14 @@
 							<?php
 							
 								include("php\db_connection.php");
+								include("php\constants.php");
+								global $tbuser;
 								$conn = getConnection();
 								
 								$specialty = $_GET["specialty"]; 
 								$patient_number = $_GET["patient_number"];
 								
-								$query = "select oid, first_name, last_name, specialty, time_avail, days_avail, room_no from tbuser where specialty = '$specialty'";
+								$query = "select oid, first_name, last_name, specialty, time_avail, days_avail, room_no from $tbuser where specialty = '$specialty'";
 								$result = mysqli_query($conn, $query);
 								
 								if (!$result) die ("Close DB connection!");
@@ -90,7 +92,83 @@
 										$first_name = $row['first_name'];
 										$last_name = $row['last_name'];
 										$room_no = $row['room_no'];
+										$specialty = $row['specialty'];
 										$doctor_number = $row['oid'];
+										$time_avail = $row['time_avail'];
+										$days_avail = $row['days_avail'];
+										
+										if ($time_avail == 'am'){
+											$time_avail = '8am to 12nn';
+										}
+										else if ($time_avail == 'pm'){
+											$time_avail = '1pm to 5pm';
+										}
+										else if ($time_avail == 'fm'){
+											$time_avail = '9am to 4pm';
+										}	
+										//echo '--'.$days_avail;
+										$avail_days = '';
+										if (strpos($days_avail, 'm') === 0 || stripos($days_avail, "m")){
+											//echo "Monday";
+											$avail_days = $avail_days.' Mon';
+										}
+										if (strpos($days_avail, 'tu') === 0 || stripos($days_avail, "tu")){
+											//echo "Tuesday";
+											$avail_days = $avail_days.' Tue';
+										}
+										if (strpos($days_avail, 'w') === 0 || stripos($days_avail, "w")){
+											//echo "Wednesday";
+											$avail_days = $avail_days.' Wed';
+										}
+										if (strpos($days_avail, 'th') === 0 || stripos($days_avail, "th")){
+											//echo "Thursday";
+											$avail_days = $avail_days.' Thu';
+										}
+										if (strpos($days_avail, 'f') === 0 || stripos($days_avail, "f")){
+											//echo "Friday";
+											$avail_days = $avail_days.' Fri';
+										}
+										if (strpos($days_avail, 's') === 0 || stripos($days_avail, "s")){
+											//echo "Saturday";
+											$avail_days = $avail_days.' Sat';
+										}
+										
+														if ($specialty == 'neuro'){
+															$specialty = 'Neurologist';
+														}	
+														else if ($specialty == 'cardio'){
+															$specialty = 'Cardiologist';
+														}	
+														else if ($specialty == 'natmed'){
+															$specialty = 'Natural Medicine';
+														}	
+														else if ($specialty == 'dentist'){
+															$specialty = 'Dentist';
+														}	
+														else if ($specialty == 'lab'){
+															$specialty = 'Laboratory';
+														}	
+														else if ($specialty == 'int'){
+															$specialty = 'Internist';
+														}	
+														else if ($specialty == 'ortho'){
+															$specialty = 'Orthopedic';
+														}	
+														else if ($specialty == 'pulmo'){
+															$specialty = 'Pulmonologist';
+														}	
+														else if ($specialty == 'pedia'){
+															$specialty = 'Pediatrician';
+														}	
+														else if ($specialty == 'eye'){
+															$specialty = 'Eye Center';
+														}	
+														else if ($specialty == 'fammed'){
+															$specialty = 'Family Medicine';
+														}	
+														else if ($specialty == 'ob'){
+															$specialty = 'OB Gynecologist';
+														}	
 										
 										echo "<div class='column-one-third space-one-fourth'>";
 										echo "<div class='details'>";
@@ -98,13 +176,13 @@
 												echo "<h3 class='details-name'>$first_name $last_name</h3>";
 												echo "<ul class='details-header-desc list-inline'>";
 													echo "<li>Specialty:</li>";
-													echo "<li>Neurologist</li>";
+													echo "<li>$specialty</li>";
 												echo "</ul>";
 											echo "</div>";
 											echo "<div>";
 												echo "<p>Room No. $room_no<br />";
-													echo "9am - 12nn<br />";
-													echo "Tue, Thur, Sat</p>";
+													echo "$time_avail<br />";
+													echo "$avail_days</p>";
 												echo "<p></p>";
 											echo "</div>";
 											echo "<div class='details-link'>";
@@ -125,9 +203,29 @@
             <div class="container">
                 <div class="row">
                     <div class="column-one-half">
-                        <p>Medical City<br/>
-						#820 Symond St. Auckland CBD<br/>
-						0800 634 8892</p>
+					<?php
+					
+							//include("php\db_connection.php");
+							//include("php\constants.php");
+							$conn = getConnection();
+							global $tborganization;
+							
+							$query = "select * from $tborganization where oid = 1";
+							//echo $query;
+							$result = mysqli_query($conn, $query);
+							
+							if (!$result) die ("Close DB connection!");
+
+							$row = mysqli_fetch_assoc($result);
+							$name = $row['name'];
+							$address = $row['address'];
+							$phone = $row['phone'];
+							
+                        echo "<p>$name<br/>";
+						echo "$address<br/>";
+						echo "$phone</p>";
+						closeConnection($conn);	
+					?>	
                     </div><!-- /.col -->
                     <div class="column-one-half text-right">
                         <p><br/>© 2015 - GRS Application by Alan & Rhiza</p>

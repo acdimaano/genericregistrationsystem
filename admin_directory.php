@@ -40,7 +40,7 @@
                             <li><a href="admin_user.php">User</a></li>
                             <li><a href="admin_record.php">Doctor</a></li>
                             <li class="selected">Directory</li>
-							<li><a href="admin_orgsettings.php">Settings</a></li>
+							<li><a href="php\admin_org_functions.php?transaction=1">Settings</a></li>
 							<li><a href="index.php">Logout</a></li>
                         </ol>
                     </div><!--/.col-->
@@ -63,14 +63,16 @@
 											<?php
 											
 												include("php\db_connection.php");
+												include("php\constants.php");
+												global $tbuser;
 												$conn = getConnection();
 												
 												if(isset($_POST['search_user'])){
 													$search_user = $_POST['search_user'];
-													$query = "select * from tbuser where email like '%$search_user%' or user_id like '%$search_user%' or last_name like '%$search_user%' or first_name like '%$search_user%'";
+													$query = "select * from $tbuser where email like '%$search_user%' or user_id like '%$search_user%' or last_name like '%$search_user%' or first_name like '%$search_user%'";
 												}
 												else {
-													$query = "select * from tbuser";
+													$query = "select * from $tbuser";
 												}
 												
 												$result = mysqli_query($conn, $query);
@@ -87,6 +89,7 @@
 													$first_name = $row['first_name'];
 													$date_updated = $row['date_updated'];
 													$role = $row['role'];
+													$specialty = $row['specialty'];
 													
 													if ($role == '1'){
 														$role = 'Site Admin';
@@ -96,6 +99,44 @@
 													}
 													else if ($role == '3'){
 														$role = 'Patient Access';
+													}
+													else {
+														if ($specialty == 'neuro'){
+															$role = 'Neurologist';
+														}	
+														else if ($specialty == 'cardio'){
+															$role = 'Cardiologist';
+														}	
+														else if ($specialty == 'natmed'){
+															$role = 'Natural Medicine';
+														}	
+														else if ($specialty == 'dentist'){
+															$role = 'Dentist';
+														}	
+														else if ($specialty == 'lab'){
+															$role = 'Laboratory';
+														}	
+														else if ($specialty == 'int'){
+															$role = 'Internist';
+														}	
+														else if ($specialty == 'ortho'){
+															$role = 'Orthopedic';
+														}	
+														else if ($specialty == 'pulmo'){
+															$role = 'Pulmonologist';
+														}	
+														else if ($specialty == 'pedia'){
+															$role = 'Pediatrician';
+														}	
+														else if ($specialty == 'eye'){
+															$role = 'Eye Center';
+														}	
+														else if ($specialty == 'fammed'){
+															$role = 'Family Medicine';
+														}	
+														else if ($specialty == 'ob'){
+															$role = 'OB Gynecologist';
+														}	
 													}	
 													
 													echo "<div class='column-one-third space-one-fourth'>";
@@ -113,7 +154,7 @@
 													echo "</div>";
 													echo "<div class='details-link'>";
 														echo "<ul class='list-inline'>";
-															echo "<li><a href='#' title=''> Edit</a></li>";
+															echo "<li><a href='php\user_edit_delete_functions.php?user_oid=$user_oid' title=''> Edit</a></li>";
 															echo "<li class='right-align'><a href='#' title=''>Delete</a></li>";
 																echo "</ul>";
 															echo "</div>";
@@ -126,7 +167,7 @@
 												
 											?>
 							<!-- end PHP code here -->
-							
+							</div><!--/.row-->
                         </div><!--/.content-->
                     </div><!--/.col-->
                 </div><!--/.row-->
@@ -136,11 +177,10 @@
                 <div class="row">
                     <div class="column-one-half">
                         <ul class="list-inline">
-                            <li><a href="#" title="" class="strong-text">About</a></li>
-                            <li><a href="#" title="" class="strong-text">Overview</a></li>
-                            <li><a href="#" title="" class="strong-text">Help</a></li>
-                            <li><a href="#" title="" class="strong-text">Terms</a></li>
-                            <li><a href="#" title="" class="strong-text">Contact Us</a></li>
+                            <li><a href="footer_details.php" target="_blank" class="strong-text">About Us</a></li>
+                            <li><a href="footer_details.php" target="_blank" class="strong-text">Overview</a></li>
+                            <li><a href="footer_details.php" target="_blank" class="strong-text">Contact Us</a></li>
+							<li><a href="footer_details.php" target="_blank" class="strong-text">Help</a></li>
                         </ul>
                     </div><!-- /.col -->
                     <div class="column-one-half text-right">

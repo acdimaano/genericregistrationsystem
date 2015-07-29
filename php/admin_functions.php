@@ -1,7 +1,13 @@
 <?php
+
+	//This file checking admin functions
+	//To check for admin, doctor and patient accounts
 	include("db_connection.php");
+	include("constants.php");
+	//Global variable for table and web url
+	global $tbuser, $weburl;
 	$conn = getConnection();
-	
+	//General variable declarations
 	$fname = $_POST["fname"]; 
 	$lname  = $_POST["lname"];
 	$userid = $_POST["userid"]; 
@@ -28,15 +34,15 @@
 		$role = '3';
 	}	
 	
-	$query = "insert into tbuser (email, user_id, first_name, last_name, role, user_password) values ('$email', '$userid', '$fname', '$lname', '$role', '$password')";
-	//echo $query;	   
+	$query = "insert into $tbuser (email, user_id, first_name, last_name, role, user_password, date_updated) values ('$email', '$userid', '$fname', '$lname', '$role', '$password', now())";
+	echo $query;	   
 	$result = mysqli_query($conn, $query);
 	
 	if ($result){
-		header( "Location: http://localhost/genericregistrationsystem/admin_welcomepage.php" );
+		header( "Location: ".$weburl."admin_welcomepage.php" );
 	}
 	else {
-		header( "Location: http://localhost/genericregistrationsystem/admin_user.php" );
+		header( "Location: ".$weburl."admin_user.php" );
 	}	
 
 	closeConnection($conn);

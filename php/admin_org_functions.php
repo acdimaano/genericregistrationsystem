@@ -1,25 +1,18 @@
 <?php
-	include("db_connection.php");
-	$conn = getConnection();
+	//This file is for organization functions
+	//Calls methods to save or retrieve org details
+	include("functions.php");
 	
-	$orgname = $_POST["orgname"]; 
-	$phone  = $_POST["phone"];
-	$address = $_POST["address"]; 
 
-	echo $orgname.'<br/>'; 
-	echo $phone.'<br/>'; 
-	echo $address.'<br/>';  
-	
-	$query = "insert into tborganization (name, phone, address) values ('$orgname', '$phone', '$address')";
-	echo $query;	   
-	$result = mysqli_query($conn, $query);
-	
-	if ($result){
-		header( "Location: http://localhost/genericregistrationsystem/admin_welcomepage.php" );
+	$transaction = $_GET["transaction"];
+	//echo $transaction;
+	if ($transaction == '2'){
+		$orgname = $_POST["orgname"]; 
+		$phone  = $_POST["phone"];
+		$address = $_POST["address"]; 
+		saveOrg($orgname, $phone, $address);
 	}
 	else {
-		header( "Location: http://localhost/genericregistrationsystem/admin_record.php" );
-	}	
-
-	closeConnection($conn);
+		getOrg();
+	}
 ?>

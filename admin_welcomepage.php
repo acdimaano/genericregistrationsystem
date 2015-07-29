@@ -26,6 +26,15 @@
 
 <body>
     <!-- Defining the page layout -->
+	<?php
+	
+		//include("constants.php");
+		//global $weburl;	
+		// Check, if username session is NOT set then this page will jump to login page
+		if (!isset($_SESSION['username'])) {
+			//header('Location: '.$weburl.'admin_welcomepage.php');
+		}
+	?>
     <div class="page-layout">
     <div class="header page-title background-header">
 		<input type="hidden" id="search_user" name="search_user" value=""/>
@@ -40,7 +49,7 @@
                             <li><a href="admin_user.php">User</a></li>
                             <li><a href="admin_record.php">Doctor</a></li>
                             <li><a href="admin_directory.php?search=start">Directory</a></li>
-							<li><a href="admin_orgsettings.php">Settings</a></li>
+							<li><a href="php\admin_org_functions.php?transaction=1">Settings</a></li>
 							<li><a href="index.php">Logout</a></li>
                         </ol>
                     </div><!--/.col-->

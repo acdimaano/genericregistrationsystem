@@ -24,7 +24,7 @@
 
 </head>
 
-<form method="post" action="php/admin_org_functions.php" >
+<form method="post" action="php/admin_org_functions.php?transaction=2" >
 <body>
     <!-- Defining the page layout -->
     <div class="page-layout">   
@@ -74,19 +74,19 @@
 
                             <div class="column-two-third form-group">
                                 <label for="template-contactform-name">Organization Name <small>*</small></label>
-                                <input type="text" id="orgname" name="orgname" value="" class="form-control" required="">
+                                <input type="text" id="orgname" name="orgname" value="<?php echo $_GET["orgname"]; ?>" class="form-control" required="">
                                 <div class="help-block with-errors"></div>
                             </div>
 
                             <div class="column-one-third form-group">
                                 <label for="template-contactform-phone">Contact Number <small>*</small></label>
-                                <input type="text" id="phone" name="phone" value="" class="form-control" required="">
+                                <input type="text" id="phone" name="phone" value="<?php echo $_GET["phone"]; ?>" class="form-control" required="">
                                 <div class="help-block with-errors"></div>
                             </div>
 
                             <div class="column-two-third form-group">
                                 <label for="template-contactform-subject">Address <small>*</small></label>
-                                <input type="text" id="address" name="address" value="" class="form-control" required="">
+                                <input type="text" id="address" name="address" value="<?php echo $_GET["address"]; ?>" class="form-control" required="">
                                 <div class="help-block with-errors"></div>
                             </div>
 
